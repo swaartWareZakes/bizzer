@@ -1,33 +1,138 @@
 <!doctype html>
 <html class="no-js" lang="en">
     <head>
-        <title>Towing & Tyre Protection - Bizzer Investments</title>
+        <title>Bizzer Investments | Insurance Brokers</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="author" content="Bizzer Investments">
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-        <meta name="description" content="Nationwide roadside assistance, towing services, and tyre protection plans by Bizzer Investments.">
+        <meta name="description" content="Registered FSP licensed insurance brokerage (License No: 52784). We provide tailored motor plans, funeral cover, call center solutions, and 24/7 roadside assistance.">
+        <meta name="keywords" content="insurance brokerage, motor plan, funeral cover, roadside assistance, BPO call center, Bizzer Investments, FSP 52784, South Africa">
+        <link rel="canonical" href="https://www.bizzerinvestments.co.za/">
+        
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://www.bizzerinvestments.co.za/">
+        <meta property="og:title" content="Bizzer Investments | Insurance Brokers">
+        <meta property="og:description" content="Registered FSP licensed insurance brokerage (License No: 52784). We provide tailored motor plans, funeral cover, call center solutions, and 24/7 roadside assistance.">
+        <meta property="og:image" content="images/bizzer/logo.jpeg">
+        <meta property="og:site_name" content="Bizzer Investments">
+        <meta property="og:locale" content="en_ZA">
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:url" content="https://www.bizzerinvestments.co.za/">
+        <meta name="twitter:title" content="Bizzer Investments | Insurance Brokers">
+        <meta name="twitter:description" content="Registered FSP licensed insurance brokerage (License No: 52784). We provide tailored motor plans, funeral cover, call center solutions, and 24/7 roadside assistance.">
+        <meta name="twitter:image" content="images/bizzer/logo.jpeg">
         
         <link rel="shortcut icon" href="images/favicon.png">
+        <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         
         <link rel="stylesheet" href="css/vendors.min.css"/>
         <link rel="stylesheet" href="css/icon.min.css"/>
         <link rel="stylesheet" href="css/style.css"/>
         <link rel="stylesheet" href="css/responsive.css"/>
-        <link rel="stylesheet" href="demos/accounting/accounting.css" /> 
+        <link rel="stylesheet" href="demos/accounting/accounting.css" />
 
         <style>
             :root {
+                /* Global override to change the template's brown to Bizzer Blue */
                 --base-color: #1B93D3; 
+                /* Bizzer Green for secondary highlights */
                 --bizzer-green: #9BC33A; 
             }
-            .bg-bizzer-green { background-color: var(--bizzer-green) !important; }
+            
+            /* Force the template's utility classes to respect your new branding */
+            .text-base-color, .btn-link:hover { color: var(--base-color) !important; }
+            .bg-base-color { background-color: var(--base-color) !important; }
+            .border-base-color { border-color: var(--base-color) !important; }
+
+            /* Custom classes you can use anywhere for the Lime Green */
             .text-bizzer-green { color: var(--bizzer-green) !important; }
-            .btn-base-color { background-color: var(--base-color) !important; border-color: var(--base-color) !important; }
+            .bg-bizzer-green { background-color: var(--bizzer-green) !important; }
+            .border-bizzer-green { border-color: var(--bizzer-green) !important; }
+
+            /* Custom Bizzer Preloader */
+            .bizzer-preloader {
+                position: fixed;
+                top: 0; left: 0; width: 100%; height: 100%;
+                background-color: #1B93D3; /* Cerulean Blue */
+                z-index: 999999;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                transition: opacity 0.6s ease-out, visibility 0.6s ease-out;
+            }
+            .bizzer-preloader.loaded {
+                opacity: 0;
+                visibility: hidden;
+            }
+            .preloader-content {
+                text-align: center;
+                color: #ffffff;
+            }
+            .bizzer-title {
+                font-family: inherit;
+                font-size: 3.5rem;
+                font-weight: 800;
+                letter-spacing: 3px;
+                margin-bottom: 0;
+                text-transform: uppercase;
+                animation: pulseText 1.5s infinite alternate;
+            }
+            .bizzer-subtitle {
+                font-size: 1rem;
+                font-weight: 500;
+                letter-spacing: 6px;
+                text-transform: uppercase;
+                color: #9BC33A; /* Lime Green */
+                display: block;
+                margin-bottom: 25px;
+                margin-top: 5px;
+            }
+            .loading-bar {
+                width: 120px;
+                height: 3px;
+                background: rgba(255,255,255,0.2);
+                margin: 0 auto;
+                position: relative;
+                overflow: hidden;
+                border-radius: 3px;
+            }
+            .loading-bar::after {
+                content: '';
+                position: absolute;
+                top: 0; left: 0;
+                height: 100%; width: 50%;
+                background: #9BC33A;
+                animation: loadingBar 1s infinite ease-in-out;
+            }
+            @keyframes pulseText {
+                0% { opacity: 0.8; transform: scale(0.98); }
+                100% { opacity: 1; transform: scale(1); }
+            }
+            @keyframes loadingBar {
+                0% { left: -50%; }
+                100% { left: 100%; }
+            }
         </style>
+    </head>
     </head>
 
     <body data-mobile-nav-style="classic" class="custom-cursor">
+
+        <div class="bizzer-preloader">
+            <div class="preloader-content">
+                <h1 class="bizzer-title">BIZZER</h1>
+                <span class="bizzer-subtitle">Insurance Brokers</span>
+                <div class="loading-bar"></div>
+            </div>
+        </div>
         
         <header class="header-with-topbar">
             <div class="header-top-bar top-bar-dark bg-very-light-gray">
@@ -273,5 +378,17 @@
         <script src="js/jquery.js"></script>
         <script src="js/vendors.min.js"></script>
         <script src="js/main.js"></script>
+
+        <script>
+            window.addEventListener('load', function() {
+                const preloader = document.querySelector('.bizzer-preloader');
+                if(preloader) {
+                    // Added a tiny 0.4s delay so the animation can be appreciated even on fast connections!
+                    setTimeout(() => {
+                        preloader.classList.add('loaded');
+                    }, 400); 
+                }
+            });
+        </script>
     </body>
 </html>

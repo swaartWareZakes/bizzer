@@ -28,6 +28,15 @@
     </head>
 
     <body data-mobile-nav-style="classic" class="custom-cursor">
+
+        <div class="bizzer-preloader">
+            <div class="preloader-content">
+                <h1 class="bizzer-title">BIZZER</h1>
+                <span class="bizzer-subtitle">Insurance Brokers</span>
+                <div class="loading-bar"></div>
+            </div>
+        </div>
+        
         
         <header class="header-with-topbar">
             <div class="header-top-bar top-bar-dark bg-very-light-gray">
@@ -275,5 +284,16 @@
         <script src="js/jquery.js"></script>
         <script src="js/vendors.min.js"></script>
         <script src="js/main.js"></script>
+        <script>
+            window.addEventListener('load', function() {
+                const preloader = document.querySelector('.bizzer-preloader');
+                if(preloader) {
+                    // Added a tiny 0.4s delay so the animation can be appreciated even on fast connections!
+                    setTimeout(() => {
+                        preloader.classList.add('loaded');
+                    }, 400); 
+                }
+            });
+        </script>
     </body>
 </html>
