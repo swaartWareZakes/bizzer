@@ -18,15 +18,106 @@
 
         <style>
             :root {
+                /* Global override to change the template's brown to Bizzer Blue */
                 --base-color: #1B93D3; 
+                /* Bizzer Green for secondary highlights */
                 --bizzer-green: #9BC33A; 
             }
-            .bg-bizzer-green { background-color: var(--bizzer-green) !important; }
+            
+            /* Force the template's utility classes to respect your new branding */
+            .text-base-color, .btn-link:hover { color: var(--base-color) !important; }
+            .bg-base-color { background-color: var(--base-color) !important; }
+            .border-base-color { border-color: var(--base-color) !important; }
+
+            /* Custom classes you can use anywhere for the Lime Green */
             .text-bizzer-green { color: var(--bizzer-green) !important; }
-            .btn-base-color { background-color: var(--base-color) !important; border-color: var(--base-color) !important; }
+            .bg-bizzer-green { background-color: var(--bizzer-green) !important; }
+            .border-bizzer-green { border-color: var(--bizzer-green) !important; }
+
+            /* Custom Bizzer Preloader */
+            .bizzer-preloader {
+                position: fixed;
+                top: 0; left: 0; width: 100%; height: 100%;
+                background-color: #1B93D3; /* Cerulean Blue */
+                z-index: 999999;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                transition: opacity 0.6s ease-out, visibility 0.6s ease-out;
+            }
+            .bizzer-preloader.loaded {
+                opacity: 0;
+                visibility: hidden;
+            }
+            .preloader-content {
+                text-align: center;
+                color: #ffffff;
+            }
+            .bizzer-title {
+                font-family: inherit;
+                font-size: 3.5rem;
+                font-weight: 800;
+                letter-spacing: 3px;
+                margin-bottom: 0;
+                text-transform: uppercase;
+                animation: pulseText 1.5s infinite alternate;
+            }
+            .bizzer-subtitle {
+                font-size: 1rem;
+                font-weight: 500;
+                letter-spacing: 6px;
+                text-transform: uppercase;
+                color: #9BC33A; /* Lime Green */
+                display: block;
+                margin-bottom: 25px;
+                margin-top: 5px;
+            }
+            .loading-bar {
+                width: 120px;
+                height: 3px;
+                background: rgba(255,255,255,0.2);
+                margin: 0 auto;
+                position: relative;
+                overflow: hidden;
+                border-radius: 3px;
+            }
+            .loading-bar::after {
+                content: '';
+                position: absolute;
+                top: 0; left: 0;
+                height: 100%; width: 50%;
+                background: #9BC33A;
+                animation: loadingBar 1s infinite ease-in-out;
+            }
+            @keyframes pulseText {
+                0% { opacity: 0.8; transform: scale(0.98); }
+                100% { opacity: 1; transform: scale(1); }
+            }
+            @keyframes loadingBar {
+                0% { left: -50%; }
+                100% { left: 100%; }
+            }
+           /* --- THE ULTIMATE LOGO LOCK --- */
+            
+            /* 1. Lock the padding on the container so it doesn't jump vertically on scroll */
+            header .navbar-brand,
+            header.sticky .navbar-brand,
+            header.sticky.sticky-active .navbar-brand {
+                padding: 15px 0 !important; 
+                margin: 0 !important;
+            }
+
+            /* 2. Override the template's 46px image limit on our new custom class */
+            img.bizzer-custom-logo {
+                height: 70px !important; 
+                max-height: 70px !important;
+                width: auto !important;
+                display: block !important;
+                transition: none !important; 
+            }
         </style>
     </head>
-
     <body data-mobile-nav-style="classic" class="custom-cursor">
 
         <div class="bizzer-preloader">
@@ -36,33 +127,34 @@
                 <div class="loading-bar"></div>
             </div>
         </div>
-        
-        
+
+        <div class="cursor-page-inner">
+            <div class="circle-cursor circle-cursor-inner"></div>
+            <div class="circle-cursor circle-cursor-outer"></div>
+        </div>
+
+
         <header class="header-with-topbar">
             <div class="header-top-bar top-bar-dark bg-very-light-gray">
                 <div class="container-fluid">
                     <div class="row h-45px xs-h-auto align-items-center m-0 xs-pt-5px xs-pb-5px">
                         <div class="col-lg-6 col-md-7 text-center text-md-start xs-px-0">
-                            <div class="fs-15 text-dark-gray fw-500">Registered FSP licensed insurance brokerage <span class="fw-700">(License No: 52784)</span></div>
+                            <div class="fs-15 text-dark-gray fw-500">
+                                <i class="feather icon-feather-map-pin me-5px text-base-color"></i>108 Fox Street, Marshalltown, Johannesburg
+                            </div>
                         </div>
                         <div class="col-lg-6 col-md-5 text-end d-none d-md-flex">
-                            <div class="widget fs-15 fw-500 me-35px lg-me-25px md-me-0 text-dark-gray">
-                                <a href="tel:0861370164"><i class="feather icon-feather-phone-call"></i>0861370164</a>
-                            </div>
-                            <div class="widget fs-15 fw-500 text-dark-gray d-none d-lg-inline-block">
-                                <a href="mailto:info@bizzerinvestments.co.za"><i class="feather icon-feather-mail"></i>info@bizzer.co.za</a>
-                            </div> 
+                            <div class="widget fs-15 fw-500 me-35px lg-me-25px md-me-0 text-dark-gray"><a href="tel:0861370164"><i class="feather icon-feather-phone-call"></i>0861 370 164</a></div>
+                            <div class="widget fs-15 fw-500 text-dark-gray d-none d-lg-inline-block"><a href="mailto:info@bizzerinvestments.co.za"><i class="feather icon-feather-mail"></i>info@bizzer.co.za</a></div> 
                         </div>
                     </div>
                 </div>
             </div>
             <nav class="navbar navbar-expand-lg header-light bg-white responsive-sticky">
                 <div class="container-fluid">
-                    <div class="col-auto col-lg-2 me-lg-0 me-auto">
+                    <div class="col-auto col-lg-auto me-lg-0 me-auto">
                         <a class="navbar-brand" href="index.html">
-                            <img src="images/bizzer/logo.jpeg" data-at2x="images/bizzer/logo.jpeg" alt="Bizzer Investments" class="default-logo">
-                            <img src="images/bizzer/logo.jpeg" data-at2x="images/bizzer/logo.jpeg" alt="Bizzer Investments" class="alt-logo">
-                            <img src="images/bizzer/logo.jpeg" data-at2x="images/bizzer/logo.jpeg" alt="Bizzer Investments" class="mobile-logo"> 
+                            <img src="images/bizzer/transp.png" alt="Bizzer Investments" class="bizzer-custom-logo">
                         </a>
                     </div>
                     <div class="col-auto menu-order position-static">
@@ -102,7 +194,8 @@
                 </div>
             </nav>
         </header>
-        <section class="page-title-big-typography cover-background" style="background-image: url('images/bizzer/funeralone.jpeg')">
+
+        <section class="top-space-margin page-title-big-typography cover-background" style="background-image: url('images/bizzer/funeralone.jpeg')">
             <div class="position-absolute left-0px top-0px w-100 h-100 bg-dark-gray opacity-6"></div>
             <div class="container position-relative z-index-1">
                 <div class="row extra-very-small-screen align-items-center">
@@ -124,8 +217,8 @@
                             <ul class="p-0 m-0 list-style-02">
                                 <li class="pb-10px mb-10px border-bottom"><a href="motor-plan.html">BL Motor Plan</a><i class="feather icon-feather-arrow-right ms-auto"></i></li>
                                 <li class="pb-10px mb-10px border-bottom text-dark-gray fw-700">Funeral Cover <i class="feather icon-feather-arrow-right ms-auto text-bizzer-green"></i></li>
-                                <li class="pb-10px mb-10px border-bottom"><a href="roadside-assist.html">Roadside Assist</a><i class="feather icon-feather-arrow-right ms-auto"></i></li>
-                                <li class="pb-10px mb-10px border-bottom"><a href="bpo.html">Call Center BPO</a><i class="feather icon-feather-arrow-right ms-auto"></i></li>
+                                <li class="pb-10px mb-10px border-bottom"><a href="towing-tyres.html">Roadside Assist</a><i class="feather icon-feather-arrow-right ms-auto"></i></li>
+                                <li class="pb-10px mb-10px border-bottom"><a href="call-center.html">Call Center BPO</a><i class="feather icon-feather-arrow-right ms-auto"></i></li>
                             </ul>
                         </div>
 
@@ -136,7 +229,7 @@
                                 </div>
                                 <div class="feature-box-content last-paragraph-no-margin">
                                     <span class="fs-19 lh-22 mb-5px d-block text-white opacity-6">Secure Now?</span>
-                                    <a href="tel:0861370164" class="text-white fs-20 fw-500">0861370164</a>
+                                    <a href="tel:0861370164" class="text-white fs-20 fw-500">0861 370 164</a>
                                 </div>
                             </div>
                         </div>
@@ -205,7 +298,7 @@
                                 <i class="feather icon-feather-mail"></i>Get a Quote
                             </a>
                             <a href="tel:0861370164" class="btn btn-extra-large btn-base-color left-icon btn-box-shadow btn-rounded d-inline-block align-middle xs-m-10px">
-                                <i class="feather icon-feather-phone-call"></i>0861370164
+                                <i class="feather icon-feather-phone-call"></i>0861 370 164
                             </a>
                         </div>
                         </div>
@@ -251,7 +344,9 @@
                         <p class="mb-5px">General Enquiries:</p>
                         <a href="mailto:info@bizzerinvestments.co.za" class="text-white lh-16 d-block mb-15px">info@bizzerinvestments.co.za</a>
                         <p class="mb-5px">24/7 Call Center:</p>
-                        <a href="tel:0861370164" class="text-white lh-16 d-block">0861370164</a>
+                        <a href="tel:0861370164" class="text-white lh-16 d-block mb-15px">0861 370 164</a>
+                        <p class="mb-5px">Working Hours:</p>
+                        <span class="text-white lh-16 d-block">Mon - Fri: 09:00 - 17:00</span>
                     </div>
                     <div class="col-lg-3 col-sm-6 md-mb-40px xs-mb-0 order-sm-2 order-lg-5">
                         <span class="fs-18 fw-400 d-block text-white mb-5px">Subscribe to newsletter</span>
@@ -288,7 +383,6 @@
             window.addEventListener('load', function() {
                 const preloader = document.querySelector('.bizzer-preloader');
                 if(preloader) {
-                    // Added a tiny 0.4s delay so the animation can be appreciated even on fast connections!
                     setTimeout(() => {
                         preloader.classList.add('loaded');
                     }, 400); 

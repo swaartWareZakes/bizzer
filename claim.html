@@ -120,6 +120,24 @@
                 0% { left: -50%; }
                 100% { left: 100%; }
             }
+           /* --- THE ULTIMATE LOGO LOCK --- */
+            
+            /* 1. Lock the padding on the container so it doesn't jump vertically on scroll */
+            header .navbar-brand,
+            header.sticky .navbar-brand,
+            header.sticky.sticky-active .navbar-brand {
+                padding: 15px 0 !important; 
+                margin: 0 !important;
+            }
+
+            /* 2. Override the template's 46px image limit on our new custom class */
+            img.bizzer-custom-logo {
+                height: 70px !important; 
+                max-height: 70px !important;
+                width: auto !important;
+                display: block !important;
+                transition: none !important; 
+            }
         </style>
     </head>
     <body data-mobile-nav-style="classic" class="custom-cursor">
@@ -131,11 +149,14 @@
                 <div class="loading-bar"></div>
             </div>
         </div>
+
         <!-- start cursor -->
         <div class="cursor-page-inner">
             <div class="circle-cursor circle-cursor-inner"></div>
             <div class="circle-cursor circle-cursor-outer"></div>
         </div>
+
+
         <!-- end cursor -->
         <!-- start header --> 
         <header class="header-with-topbar">
@@ -143,26 +164,22 @@
                 <div class="container-fluid">
                     <div class="row h-45px xs-h-auto align-items-center m-0 xs-pt-5px xs-pb-5px">
                         <div class="col-lg-6 col-md-7 text-center text-md-start xs-px-0">
-                            <div class="fs-15 text-dark-gray fw-500">Registered FSP licensed insurance brokerage <span class="fw-700">(License No: 52784)</span></div>
+                            <div class="fs-15 text-dark-gray fw-500">
+                                <i class="feather icon-feather-map-pin me-5px text-base-color"></i>108 Fox Street, Marshalltown, Johannesburg
+                            </div>
                         </div>
                         <div class="col-lg-6 col-md-5 text-end d-none d-md-flex">
-                            <div class="widget fs-15 fw-500 me-35px lg-me-25px md-me-0 text-dark-gray">
-                                <a href="tel:0861370164"><i class="feather icon-feather-phone-call"></i>0861370164</a>
-                            </div>
-                            <div class="widget fs-15 fw-500 text-dark-gray d-none d-lg-inline-block">
-                                <a href="mailto:info@bizzerinvestments.co.za"><i class="feather icon-feather-mail"></i>info@bizzer.co.za</a>
-                            </div> 
+                            <div class="widget fs-15 fw-500 me-35px lg-me-25px md-me-0 text-dark-gray"><a href="tel:0861370164"><i class="feather icon-feather-phone-call"></i>0861 370 164</a></div>
+                            <div class="widget fs-15 fw-500 text-dark-gray d-none d-lg-inline-block"><a href="mailto:info@bizzerinvestments.co.za"><i class="feather icon-feather-mail"></i>info@bizzer.co.za</a></div> 
                         </div>
                     </div>
                 </div>
             </div>
             <nav class="navbar navbar-expand-lg header-light bg-white responsive-sticky">
                 <div class="container-fluid">
-                    <div class="col-auto col-lg-2 me-lg-0 me-auto">
+                    <div class="col-auto col-lg-auto me-lg-0 me-auto">
                         <a class="navbar-brand" href="index.html">
-                            <img src="images/bizzer/logo.jpeg" data-at2x="images/bizzer/logo.jpeg" alt="Bizzer Investments" class="default-logo">
-                            <img src="images/bizzer/logo.jpeg" data-at2x="images/bizzer/logo.jpeg" alt="Bizzer Investments" class="alt-logo">
-                            <img src="images/bizzer/logo.jpeg" data-at2x="images/bizzer/logo.jpeg" alt="Bizzer Investments" class="mobile-logo"> 
+                            <img src="images/bizzer/transp.png" alt="Bizzer Investments" class="bizzer-custom-logo">
                         </a>
                     </div>
                     <div class="col-auto menu-order position-static">
@@ -202,6 +219,7 @@
                 </div>
             </nav>
         </header>
+
         <!-- end header -->
         <!-- start page title -->
 
