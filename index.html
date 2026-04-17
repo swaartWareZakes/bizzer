@@ -6,14 +6,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="author" content="Bizzer Investments">
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-        <meta name="description" content="Registered FSP licensed insurance brokerage (License No: 52784). We provide tailored funeral cover and professional outbound call center solutions.">
-        <meta name="keywords" content="insurance brokerage, funeral cover, BPO call center, Bizzer Investments, FSP 52784, South Africa">
+        <meta name="description" content="Registered FSP licensed insurance brokerage (License No: 52784). We provide tailored cash payout funeral cover, advanced tracking, and professional call center solutions.">
+        <meta name="keywords" content="insurance brokerage, cash payout funeral cover, advanced tracking, BPO call center, Bizzer Investments, FSP 52784, South Africa">
         <link rel="canonical" href="https://www.bizzerinvestments.co.za/">
         
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://www.bizzerinvestments.co.za/">
         <meta property="og:title" content="Bizzer Investments | Insurance Brokers">
-        <meta property="og:description" content="Registered FSP licensed insurance brokerage. Specializing in Dignified Funeral Cover and BPO Call Center Solutions.">
+        <meta property="og:description" content="Registered FSP licensed insurance brokerage. Specializing in Cash Payout Funeral Cover, Advanced Tracking, and BPO Call Center Solutions.">
         <meta property="og:image" content="images/bizzer/logo-trans.png">
         <meta property="og:site_name" content="Bizzer Investments">
         <meta property="og:locale" content="en_ZA">
@@ -21,7 +21,7 @@
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:url" content="https://www.bizzerinvestments.co.za/">
         <meta name="twitter:title" content="Bizzer Investments | Insurance Brokers">
-        <meta name="twitter:description" content="Registered FSP licensed insurance brokerage. Specializing in Dignified Funeral Cover and BPO Call Center Solutions.">
+        <meta name="twitter:description" content="Registered FSP licensed insurance brokerage. Specializing in Cash Payout Funeral Cover, Advanced Tracking, and BPO Call Center Solutions.">
         <meta name="twitter:image" content="images/bizzer/logo-trans.png">
         
         <link rel="shortcut icon" href="images/favicon.png">
@@ -63,69 +63,25 @@
                 flex-direction: column;
                 transition: opacity 0.6s ease-out, visibility 0.6s ease-out;
             }
-            .bizzer-preloader.loaded {
-                opacity: 0;
-                visibility: hidden;
-            }
-            .preloader-content {
-                text-align: center;
-                color: #ffffff;
-            }
-            .bizzer-title {
-                font-family: inherit;
-                font-size: 3.5rem;
-                font-weight: 800;
-                letter-spacing: 3px;
-                margin-bottom: 0;
-                text-transform: uppercase;
-                animation: pulseText 1.5s infinite alternate;
-            }
-            .bizzer-subtitle {
-                font-size: 1rem;
-                font-weight: 500;
-                letter-spacing: 6px;
-                text-transform: uppercase;
-                color: #9BC33A; 
-                display: block;
-                margin-bottom: 25px;
-                margin-top: 5px;
-            }
-            .loading-bar {
-                width: 120px;
-                height: 3px;
-                background: rgba(255,255,255,0.2);
-                margin: 0 auto;
-                position: relative;
-                overflow: hidden;
-                border-radius: 3px;
-            }
-            .loading-bar::after {
-                content: '';
-                position: absolute;
-                top: 0; left: 0;
-                height: 100%; width: 50%;
-                background: #9BC33A;
-                animation: loadingBar 1s infinite ease-in-out;
-            }
-            @keyframes pulseText {
-                0% { opacity: 0.8; transform: scale(0.98); }
-                100% { opacity: 1; transform: scale(1); }
-            }
-            @keyframes loadingBar {
-                0% { left: -50%; }
-                100% { left: 100%; }
-            }
-
-            /* LOGO LOCK */
-            header .navbar-brand,
-            header.sticky .navbar-brand,
-            header.sticky.sticky-active .navbar-brand {
+            .bizzer-preloader.loaded { opacity: 0; visibility: hidden; }
+            .preloader-content { text-align: center; color: #ffffff; }
+            .bizzer-title { font-family: inherit; font-size: 3.5rem; font-weight: 800; letter-spacing: 3px; margin-bottom: 0; text-transform: uppercase; animation: pulseText 1.5s infinite alternate; }
+            .bizzer-subtitle { font-size: 1rem; font-weight: 500; letter-spacing: 6px; text-transform: uppercase; color: #9BC33A; display: block; margin-bottom: 25px; margin-top: 5px; }
+            
+            .loading-bar { width: 120px; height: 3px; background: rgba(255,255,255,0.2); margin: 0 auto; position: relative; overflow: hidden; border-radius: 3px; }
+            .loading-bar::after { content: ''; position: absolute; top: 0; left: 0; height: 100%; width: 50%; background: #9BC33A; animation: loadingBar 1s infinite ease-in-out; }
+            
+            @keyframes pulseText { 0% { opacity: 0.8; transform: scale(0.98); } 100% { opacity: 1; transform: scale(1); } }
+            @keyframes loadingBar { 0% { left: -50%; } 100% { left: 100%; } }
+            
+            /* --- THE ULTIMATE LOGO LOCK --- */
+            header .navbar-brand, header.sticky .navbar-brand, header.sticky.sticky-active .navbar-brand {
                 padding: 15px 0 !important; 
                 margin: 0 !important;
             }
             img.bizzer-custom-logo {
-                height:90 !important; 
-                max-height: 90px !important;
+                height: 70px !important; 
+                max-height: 70px !important;
                 width: auto !important;
                 display: block !important;
                 transition: none !important; 
@@ -139,9 +95,9 @@
                 /* filter: grayscale(100%); */
                 transition: filter 0.3s ease;
             }
-            /* .partner-logo-img:hover {
+            .partner-logo-img:hover {
                 filter: grayscale(0%);
-            } */
+            }
         </style>
     </head>
     <body data-mobile-nav-style="classic" class="custom-cursor">
@@ -197,7 +153,8 @@
                                     <a href="services.html" class="nav-link">Services</a>
                                     <i class="fa-solid fa-angle-down dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
-                                        <li><a href="funeral-cover.html"><img src="images/demo-accounting-company-icon03.svg" alt="">Funeral Cover</a></li>
+                                        <li><a href="funeral-cover.html"><img src="images/demo-accounting-company-icon03.svg" alt="">Cash Payout Funeral Cover</a></li>
+                                        <li><a href="tracking.html"><img src="images/demo-accounting-company-icon-05.svg" alt="">Advanced Tracking</a></li>
                                         <li><a href="call-center.html"><img src="images/demo-accounting-company-icon-04.svg" alt="">Outbound Call Center</a></li>
                                     </ul>
                                 </li>
@@ -228,15 +185,15 @@
             
             <div class="container h-100 position-relative">
                 <div class="row align-items-center h-100">
-                    <div class="col-xl-7 col-md-9 col-sm-9 position-relative text-white" data-anime='{ "el": "childs", "opacity": [0, 1], "translateY": [30, 0], "staggervalue": 200, "easing": "easeInOutSine" }'>  
+                    <div class="col-xl-9 col-md-10 col-sm-10 position-relative text-white" data-anime='{ "el": "childs", "opacity": [0, 1], "translateY": [30, 0], "staggervalue": 200, "easing": "easeInOutSine" }'>  
                         
-                        <div class="fs-80 lh-75 sm-fs-65 fw-600 mb-20px text-shadow-large ls-minus-2px">
-                            Trust & Credibility in Every Journey.
+                        <div class="fs-70 lh-75 sm-fs-50 fw-600 mb-20px text-shadow-large ls-minus-2px">
+                            All Your Insurance Needs, Covered Under One Roof
                         </div> 
                         
                         <div>
-                            <span class="opacity-8 fs-20 w-70 md-w-85 mb-25px fw-300 d-inline-block">
-                                Providing reliable funeral cover and professional outbound call center services across South Africa.
+                            <span class="opacity-8 fs-20 w-80 md-w-95 mb-25px fw-300 d-inline-block">
+                                Bizzer Insurance Brokers—trusted funeral cover, advanced tracking, and a professional call center—here to protect you, every step of the way.
                             </span> 
                         </div>
                         
@@ -273,7 +230,7 @@
                             </div>
                             <div class="col-xl-7 col-lg-6 col-sm-7 ps-45px lg-ps-15px last-paragraph-no-margin text-center text-sm-start" data-anime='{  "opacity": [0,1], "delay": 100, "staggervalue": 250, "easing": "easeOutQuad" }'>
                                 <h5 class="fw-600 text-dark-gray ls-minus-1px mb-15px">Years working experience.</h5>
-                                <p>We focus on your peace of mind, delivering tailored funeral cover and professional BPO solutions that best fit your demands.</p>
+                                <p>We put a strong focus on your peace of mind, delivering tailored funeral cover and tracking solutions that best fit your demands.</p>
                                 <a href="about.html" class="btn btn-link btn-hover-animation-switch btn-extra-large text-base-color text-transform-none fw-600 mt-15px">
                                     <span>
                                         <span class="btn-text">Discover now</span>
@@ -303,7 +260,8 @@
                                     <span class="form-icon"><i class="bi bi-briefcase"></i></span>
                                     <select name="service" class="form-control required" style="appearance: none; padding-left: 45px;">
                                         <option value="" disabled selected>Select a Service*</option>
-                                        <option value="funeral-cover">Funeral Cover</option>
+                                        <option value="funeral-cover">Cash Payout Funeral Cover</option>
+                                        <option value="tracking">Advanced Tracking</option>
                                         <option value="call-center">Call Center Setup</option>
                                     </select>
                                 </div>
@@ -325,7 +283,7 @@
                         <h4 class="text-dark-gray fw-700 mb-0 ls-minus-1px">Why choose Bizzer Investments as your partner?</h4>
                     </div>
                     <div class="col-xl-5 col-lg-5 last-paragraph-no-margin md-mb-30px" data-anime='{ "translateX": [-50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
-                        <p class="w-90 xl-w-100 md-w-80 sm-w-100 md-mx-auto">We put a strong focus on your peace of mind, offering tailored solutions from cashback funeral cover to outbound BPO services to fit your specific needs.</p>
+                        <p class="w-90 xl-w-100 md-w-80 sm-w-100 md-mx-auto">We put a strong focus on your peace of mind, offering tailored solutions from advanced tracking to cash payout funeral cover to fit your specific needs.</p>
                     </div>
                     <div class="col-xl-2 col-lg-2 d-flex justify-content-center justify-content-lg-end" data-anime='{ "el": "childs", "translateX": [30, 0], "opacity": [0,1], "duration": 800, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'> 
                         <div class="slider-one-slide-prev-1 icon-small text-dark-gray swiper-button-prev slider-navigation-style-04 bg-white text-dark-gray box-shadow-large"><i class="fa-solid fa-arrow-left"></i></div>
@@ -344,15 +302,37 @@
                                         <div class="interactive-banner-style-08">
                                             <figure class="m-0 hover-box overflow-hidden position-relative border-radius-6px">
                                                 <a href="funeral-cover.html">
-                                                    <img src="images/bizzer/funeralone.jpeg" alt="Funeral Cover" style="height: 450px; width: 100%; object-fit: cover;" />
+                                                    <img src="images/bizzer/funeraltwo.jpeg" alt="Cash Payout Funeral Cover" style="height: 450px; width: 100%; object-fit: cover;" />
                                                 </a>
                                                 <figcaption class="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-14 lg-p-10">
                                                     <a href="funeral-cover.html"><i class="line-icon-Money-Bag text-white icon-extra-large"></i></a>
                                                     <div class="mt-auto d-flex w-100 align-items-center">
                                                         <div class="col last-paragraph-no-margin">
-                                                            <a href="funeral-cover.html" class="text-white fs-24 lh-28 w-65 xl-w-75 d-block">Funeral Cover</a>
+                                                            <a href="funeral-cover.html" class="text-white fs-24 lh-28 w-65 xl-w-75 d-block">Cash Payout Funeral Cover</a>
                                                         </div>
                                                         <a href="funeral-cover.html" class="circle-box bg-bizzer-green w-50px h-50px rounded-circle ms-auto position-relative rounded-box">
+                                                            <i class="bi bi-arrow-right-short absolute-middle-center icon-very-medium lh-0px text-white"></i>
+                                                        </a> 
+                                                    </div>
+                                                    <div class="position-absolute left-0px top-0px w-100 h-100 bg-gradient-gray-light-dark-transparent z-index-minus-1 opacity-9"></div> 
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="interactive-banner-style-08">
+                                            <figure class="m-0 hover-box overflow-hidden position-relative border-radius-6px">
+                                                <a href="tracking.html">
+                                                    <img src="images/bizzer/track.jpeg" alt="Advanced Tracking" style="height: 450px; width: 100%; object-fit: cover;" />
+                                                </a>
+                                                <figcaption class="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-14 lg-p-10">
+                                                    <a href="tracking.html"><i class="line-icon-Location-2 text-white icon-extra-large"></i></a>
+                                                    <div class="mt-auto d-flex w-100 align-items-center">
+                                                        <div class="col last-paragraph-no-margin">
+                                                            <a href="tracking.html" class="text-white fs-24 lh-28 w-65 xl-w-75 d-block">Advanced Tracking</a>
+                                                        </div>
+                                                        <a href="tracking.html" class="circle-box bg-bizzer-green w-50px h-50px rounded-circle ms-auto position-relative rounded-box">
                                                             <i class="bi bi-arrow-right-short absolute-middle-center icon-very-medium lh-0px text-white"></i>
                                                         </a> 
                                                     </div>
@@ -396,19 +376,24 @@
             <div class="container">
                 <div class="row align-items-center justify-content-center g-0">
                     <div class="col-auto d-flex align-items-center flex-column flex-sm-row text-center text-sm-start" data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                        
                         <img src="images/bizzer/avatars.png" alt="Bizzer Support Team" class="me-sm-30px mb-15px mb-sm-0" style="height: 80px; width: auto; object-fit: contain;">
+                        
                         <div class="fs-19 lh-28 last-paragraph-no-margin text-white pt-20px pb-20px pt-sm-15px pb-sm-15px">
                             <p>Save your precious time and effort spent finding a solution. 
                                 <a href="contact.html" class="text-decoration-line-bottom fw-600 text-white ms-5px">Contact us now</a>
                             </p>
                         </div>
+
                     </div>
                 </div>
             </div>
         </section>
 
+
         <section class="py-5 bg-white">
             <div class="container">
+                
                 <div class="row justify-content-center text-center mb-5">
                     <div class="col-lg-8">
                         <h3 class="fw-700 text-dark-gray ls-minus-1px">Trusted by leading insurance and financial partners</h3>
@@ -443,18 +428,44 @@
                     <div class="col-12">
                         <div class="swiper" data-slider-options='{ "slidesPerView": 2, "spaceBetween": 40, "loop": true, "autoplay": { "delay": 2500, "disableOnInteraction": false }, "breakpoints": { "1200": { "slidesPerView": 6 }, "992": { "slidesPerView": 4 }, "768": { "slidesPerView": 3 } } }'>
                             <div class="swiper-wrapper align-items-center">
-                                <div class="swiper-slide text-center"><img src="images/logos/capitel.jpeg" alt="Capital Legacy" class="partner-logo-img"></div>
-                                <div class="swiper-slide text-center"><img src="images/logos/king.jpeg" alt="King Price" class="partner-logo-img"></div>
-                                <div class="swiper-slide text-center"><img src="images/logos/sant.jpeg" alt="Santam" class="partner-logo-img"></div>
-                                <div class="swiper-slide text-center"><img src="images/logos/disc.jpeg" alt="Discovery" class="partner-logo-img"></div>
-                                <div class="swiper-slide text-center"><img src="images/logos/bid.jpeg" alt="Bidvest" class="partner-logo-img"></div>
-                                <div class="swiper-slide text-center"><img src="images/logos/net.jpeg" alt="Netstar" class="partner-logo-img"></div>
-                                <div class="swiper-slide text-center"><img src="images/logos/old.jpeg" alt="Old Mutual" class="partner-logo-img"></div>
-                                <div class="swiper-slide text-center"><img src="images/logos/sanl.jpeg" alt="Sanlam" class="partner-logo-img"></div>
+                                
+                                <div class="swiper-slide text-center">
+                                    <img src="images/logos/capitel.jpeg" alt="Capital Legacy" class="partner-logo-img">
+                                </div>
+                                
+                                <div class="swiper-slide text-center">
+                                    <img src="images/logos/king.jpeg" alt="King Price" class="partner-logo-img">
+                                </div>
+                                
+                                <div class="swiper-slide text-center">
+                                    <img src="images/logos/sant.jpeg" alt="Santam" class="partner-logo-img">
+                                </div>
+                                
+                                <div class="swiper-slide text-center">
+                                    <img src="images/logos/disc.jpeg" alt="Discovery" class="partner-logo-img">
+                                </div>
+                                
+                                <div class="swiper-slide text-center">
+                                    <img src="images/logos/bid.jpeg" alt="Bidvest" class="partner-logo-img">
+                                </div>
+                                
+                                <div class="swiper-slide text-center">
+                                    <img src="images/logos/net.jpeg" alt="Netstar" class="partner-logo-img">
+                                </div>
+                                
+                                <div class="swiper-slide text-center">
+                                    <img src="images/logos/old.jpeg" alt="Old Mutual" class="partner-logo-img">
+                                </div>
+
+                                <div class="swiper-slide text-center">
+                                    <img src="images/logos/sanl.jpeg" alt="Sanlam" class="partner-logo-img">
+                                </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
+                
 
                 <div class="row justify-content-center align-items-center">
                     <div class="col-12 text-center" data-anime='{ "translateY": [20, 0], "opacity": [0,1], "duration": 600, "delay": 0, "easing": "easeOutQuad" }'>
@@ -473,26 +484,49 @@
                 <div class="row mb-8 sm-mb-10">
                     <div class="col-12 tab-style-08"> 
                         <div class="tab-content">
+                            
                             <div class="tab-pane fade in active show" id="tab_funeral">
                                 <div class="row align-items-center justify-content-center g-lg-0">
-                                    <div class="col-md-6 sm-mb-30px position-relative overflow-hidden">
-                                        <img src="images/bizzer/funeralone.jpeg" alt="Funeral Cover" class="w-100 border-radius-4px" style="height: 505px; object-fit: cover;">
-                                        <div class="bg-very-light-gray w-auto position-absolute pt-20px pb-20px ps-25px pe-25px border-radius-4px bottom-30px left-35px box-shadow-large d-flex align-items-center">
+                                    <div class="col-md-6 sm-mb-30px position-relative overflow-hidden" data-anime='{ "effect": "slide", "color": "#1B93D3", "direction":"lr", "easing": "easeOutQuad", "delay":50}'>
+                                        <img src="images/bizzer/funeralone.jpeg" alt="Funeral Cover" class="w-100 border-radius-6px" style="height: 505px; object-fit: cover;">
+                                        <div class="bg-very-light-gray w-auto position-absolute pt-20px pb-20px ps-25px pe-25px border-radius-4px bottom-30px left-35px box-shadow-large d-flex align-items-center" data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 800, "staggervalue": 500, "easing": "easeOutQuad" }'>
                                             <h2 class="vertical-counter d-inline-flex text-dark-gray fw-700 ls-minus-2px md-ls-minus-1px mb-0 text-nowrap border-end border-1 border-color-transparent-dark-very-light pe-20px me-20px" data-to="15"></h2>
                                             <span class="text-dark-gray ls-minus-05px d-inline-block lh-22 text-nowrap">Thousand ZAR<br/>Lump Sum</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-5 offset-lg-1 col-md-6 text-center text-md-start" data-anime='{ "el": "childs", "translateX": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                                        <div class="mb-20px">
+                                            <div class="separator-line-1px w-50px bg-base-color d-inline-block align-middle me-10px opacity-2"></div>
+                                            <span class="d-inline-block text-dark-gray align-middle fw-500 fs-20 ls-minus-05px">Family Security</span>
+                                        </div>
+                                        <h4 class="fw-700 text-dark-gray ls-minus-1px md-mb-20px">Cash Payout Funeral Cover.</h4>
+                                        <p class="mb-35px md-mb-25px">A reliable cash payout benefit plan providing a lump sum for you and your family, covering members up to age 65 so you can grieve without financial stress.</p> 
+                                        <a href="funeral-cover.html" class="btn btn-large btn-rounded with-rounded btn-white btn-box-shadow fw-600">Learn more<span class="bg-base-color text-white"><i class="bi bi-arrow-right-short icon-extra-medium"></i></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-pane fade in" id="tab_tracking">
+                                <div class="row align-items-center justify-content-center g-lg-0">
+                                    <div class="col-md-6 sm-mb-30px position-relative overflow-hidden">
+                                        <img src="images/bizzer/track.jpeg" alt="Advanced Tracking" class="w-100 border-radius-4px" style="height: 505px; object-fit: cover;">
+                                        <div class="bg-very-light-gray w-auto position-absolute pt-20px pb-20px ps-25px pe-25px border-radius-4px bottom-30px left-35px box-shadow-large d-flex align-items-center">
+                                            <h2 class="vertical-counter d-inline-flex text-dark-gray fw-700 ls-minus-2px md-ls-minus-1px mb-0 text-nowrap border-end border-1 border-color-transparent-dark-very-light pe-20px me-20px" data-to="24"></h2>
+                                            <span class="text-dark-gray ls-minus-05px d-inline-block lh-22 text-nowrap">Hours A Day<br/>Monitoring</span>
                                         </div>
                                     </div>
                                     <div class="col-xl-4 col-lg-5 offset-lg-1 col-md-6 text-center text-md-start">
                                         <div class="mb-20px">
                                             <div class="separator-line-1px w-50px bg-base-color d-inline-block align-middle me-10px opacity-2"></div>
-                                            <span class="d-inline-block text-dark-gray align-middle fw-500 fs-20 ls-minus-05px">Family Security</span>
+                                            <span class="d-inline-block text-dark-gray align-middle fw-500 fs-20 ls-minus-05px">Asset Protection</span>
                                         </div>
-                                        <h4 class="fw-700 text-dark-gray ls-minus-1px md-mb-20px">Dedicated Family Funeral Cover.</h4>
-                                        <p class="mb-35px md-mb-25px">A reliable cashback benefit plan providing a lump sum payout for you and your family, covering members up to age 65 so you can grieve without financial stress.</p> 
-                                        <a href="services.html" class="btn btn-large btn-rounded with-rounded btn-white btn-box-shadow fw-600">Learn more<span class="bg-base-color text-white"><i class="bi bi-arrow-right-short icon-extra-medium"></i></span></a>
+                                        <h4 class="fw-700 text-dark-gray ls-minus-1px md-mb-20px">Advanced Tracking Systems.</h4>
+                                        <p class="mb-35px md-mb-25px">State-of-the-art vehicle tracking technology to ensure your assets are monitored and recoverable at a moment's notice.</p> 
+                                        <a href="tracking.html" class="btn btn-large btn-rounded with-rounded btn-white btn-box-shadow fw-600">Learn more<span class="bg-base-color text-white"><i class="bi bi-arrow-right-short icon-extra-medium"></i></span></a>
                                     </div>
                                 </div>
                             </div>
+                            
                             <div class="tab-pane fade in" id="tab_callcenter">
                                 <div class="row align-items-center justify-content-center g-lg-0">
                                     <div class="col-md-6 sm-mb-30px position-relative overflow-hidden">
@@ -509,10 +543,11 @@
                                         </div>
                                         <h4 class="fw-700 text-dark-gray ls-minus-1px md-mb-20px">Outbound Call Center Setup.</h4>
                                         <p class="mb-35px md-mb-25px">Elevate your business communication with our professional outbound call center services, designed to increase conversion rates and ensure customer success.</p> 
-                                        <a href="services.html" class="btn btn-large btn-rounded with-rounded btn-white btn-box-shadow fw-600">Learn more<span class="bg-base-color text-white"><i class="bi bi-arrow-right-short icon-extra-medium"></i></span></a>
+                                        <a href="call-center.html" class="btn btn-large btn-rounded with-rounded btn-white btn-box-shadow fw-600">Learn more<span class="bg-base-color text-white"><i class="bi bi-arrow-right-short icon-extra-medium"></i></span></a>
                                     </div>
                                 </div>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -521,7 +556,8 @@
             <div class="tab-style-08 border-bottom border-color-extra-medium-gray bg-white box-shadow-quadruple-large">
                 <div class="container">
                     <ul class="nav nav-tabs border-0 fw-500 fs-19 text-center">
-                        <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#tab_funeral" data-tab="counter">Funeral Cover<span class="tab-border bg-base-color"></span></a></li>
+                        <li class="nav-item"><a data-bs-toggle="tab" href="#tab_funeral" class="nav-link active">Funeral Cover<span class="tab-border bg-base-color"></span></a></li>
+                        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tab_tracking" data-tab="counter">Advanced Tracking<span class="tab-border bg-base-color"></span></a></li>
                         <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tab_callcenter" data-tab="counter">Call Center<span class="tab-border bg-base-color"></span></a></li>
                     </ul>
                 </div>
@@ -535,7 +571,7 @@
                         <h4 class="text-dark-gray fw-700 ls-minus-1px">Valuable financial and insurance insights</h4>
                     </div>
                 </div>            
-                <div class="row g-0">
+                <div class="row justify-content-center g-0">
                     <div class="col-12">
                         <ul class="blog-classic blog-wrapper grid-loading grid grid-4col xl-grid-4col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-extra-large" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
                             <li class="grid-sizer"></li>
@@ -546,8 +582,8 @@
                                         <a href="#"><img src="images/bizzer/funeralone.jpeg" alt="Funeral Cover" style="aspect-ratio: 4/3; width: 100%; object-fit: cover;" /></a>
                                     </div>
                                     <div class="card-body px-0 pt-30px pb-30px xs-pb-15px last-paragraph-no-margin">
-                                        <a href="#" class="card-title mb-5px fw-600 text-dark-gray d-block lh-sm">The Importance of Cashback Funeral Cover</a>
-                                        <p class="mt-2">Why choosing a plan with a cashback benefit provides ultimate peace of mind for your family.</p> 
+                                        <a href="#" class="card-title mb-5px fw-600 text-dark-gray d-block lh-sm">The Importance of Cash Payout Funeral Cover</a>
+                                        <p class="mt-2">Why choosing a plan with a cash payout benefit provides ultimate peace of mind for your family.</p> 
                                     </div>
                                 </div>
                             </li>
@@ -562,7 +598,7 @@
                                     </div>
                                 </div>
                             </li>
-                            </ul>
+                        </ul>
                     </div> 
                 </div>
             </div>
@@ -575,7 +611,7 @@
                         
                         <div class="col-xl-6 text-center text-xl-start lg-mb-30px sm-mb-20px">
                             <h3 class="text-white mb-5px fw-500 ls-minus-1px">Need financial peace of mind?</h3>
-                            <span class="fs-20 widget-text fw-300">Let us handle your motor plans, cover, and roadside assistance.</span>
+                            <span class="fs-20 widget-text fw-300">Let us handle your funeral cover, tracking, and call center needs.</span>
                         </div>
                         <div class="col-xl-6 text-center text-xl-end">
                             <a href="contact.html" class="btn btn-extra-large left-icon btn-box-shadow btn-rounded text-transform-none d-inline-block align-middle me-15px xs-m-10px text-white" style="background-color: #9BC33A;">
@@ -617,8 +653,9 @@
                     <div class="col-6 col-lg-2 col-sm-4 xs-mb-30px order-sm-4 order-lg-3">
                         <span class="fs-18 fw-400 d-block text-white mb-5px">Products</span>
                         <ul>
-                            <li><a href="services.html">Funeral Cover</a></li>
-                            <li><a href="services.html">Call Center Solutions</a></li>
+                            <li><a href="funeral-cover.html">Cash Payout Funeral Cover</a></li>
+                            <li><a href="tracking.html">Advanced Tracking</a></li>
+                            <li><a href="call-center.html">Call Center Solutions</a></li>
                         </ul>
                     </div>
                     <div class="col-6 col-lg-2 col-sm-4 xs-mb-30px order-sm-5 order-lg-4">
@@ -657,6 +694,7 @@
                     </div>
             </div> 
         </footer>
+        
         <div class="sticky-wrap d-none d-lg-inline-block" data-animation-delay="100" data-shadow-animation="true">
             <span class="fs-16">
                 <i class="bi bi-envelope icon-small me-10px"></i>Need financial advice? — 
@@ -669,6 +707,7 @@
                 <span class="scroll-line"><span class="scroll-point"></span></span>
             </a>
         </div>
+        
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/vendors.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
