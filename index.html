@@ -1,725 +1,654 @@
 ﻿<!doctype html>
 <html class="no-js" lang="en">
     <head>
-        <title>Bizzer Insurance Brokers | Insurance Brokers</title>
+        <!-- title -->
+        <title>Crafto - The Multipurpose HTML5 Template</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="author" content="Bizzer Insurance Brokers">
+        <meta name="author" content="ThemeZaa">
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-        <meta name="description" content="Registered FSP licensed insurance brokerage (License No: 52784). We provide tailored Funeral Cover, advanced tracking, and professional call center solutions.">
-        <meta name="keywords" content="insurance brokerage, Funeral Cover, advanced tracking, BPO call center, Bizzer Insurance Brokers, FSP 52784, South Africa">
-        <link rel="canonical" href="https://www.bizzerinvestments.co.za/">
-        
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://www.bizzerinvestments.co.za/">
-        <meta property="og:title" content="Bizzer Insurance Brokers | Insurance Brokers">
-        <meta property="og:description" content="Registered FSP licensed insurance brokerage. Specializing in Funeral Cover, Advanced Tracking, and BPO Call Center Solutions.">
-        <meta property="og:image" content="images/bizzer/logo-trans.png">
-        <meta property="og:site_name" content="Bizzer Insurance Brokers">
-        <meta property="og:locale" content="en_ZA">
-
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:url" content="https://www.bizzerinvestments.co.za/">
-        <meta name="twitter:title" content="Bizzer Insurance Brokers | Insurance Brokers">
-        <meta name="twitter:description" content="Registered FSP licensed insurance brokerage. Specializing in Funeral Cover, Advanced Tracking, and BPO Call Center Solutions.">
-        <meta name="twitter:image" content="images/bizzer/logo-trans.png">
-        
+        <meta name="description" content="Elevate your online presence with Crafto - a modern, versatile, multipurpose Bootstrap 5 responsive HTML5, SCSS template using highly creative 56+ ready demos.">
+        <!-- favicon icon -->
         <link rel="shortcut icon" href="images/favicon.png">
         <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
         <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-        
+        <!-- google fonts preconnect -->
         <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        
+        <!-- style sheets and font icons  -->
         <link rel="stylesheet" href="css/vendors.min.css"/>
         <link rel="stylesheet" href="css/icon.min.css"/>
         <link rel="stylesheet" href="css/style.css"/>
         <link rel="stylesheet" href="css/responsive.css"/>
-        <link rel="stylesheet" href="demos/accounting/accounting.css" />
-
-        <style>
-            :root {
-                --base-color: #1B93D3; 
-                --bizzer-green: #9BC33A; 
-            }
-            
-            .text-base-color, .btn-link:hover { color: var(--base-color) !important; }
-            .bg-base-color { background-color: var(--base-color) !important; }
-            .border-base-color { border-color: var(--base-color) !important; }
-
-            .text-bizzer-green { color: var(--bizzer-green) !important; }
-            .bg-bizzer-green { background-color: var(--bizzer-green) !important; }
-            .border-bizzer-green { border-color: var(--bizzer-green) !important; }
-
-            .bizzer-preloader {
-                position: fixed;
-                top: 0; left: 0; width: 100%; height: 100%;
-                background-color: #1B93D3; 
-                z-index: 999999;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-                transition: opacity 0.6s ease-out, visibility 0.6s ease-out;
-            }
-            .bizzer-preloader.loaded { opacity: 0; visibility: hidden; }
-            .preloader-content { text-align: center; color: #ffffff; }
-            .bizzer-title { font-family: inherit; font-size: 3.5rem; font-weight: 800; letter-spacing: 3px; margin-bottom: 0; text-transform: uppercase; animation: pulseText 1.5s infinite alternate; }
-            .bizzer-subtitle { font-size: 1rem; font-weight: 500; letter-spacing: 6px; text-transform: uppercase; color: #9BC33A; display: block; margin-bottom: 25px; margin-top: 5px; }
-            
-            .loading-bar { width: 120px; height: 3px; background: rgba(255,255,255,0.2); margin: 0 auto; position: relative; overflow: hidden; border-radius: 3px; }
-            .loading-bar::after { content: ''; position: absolute; top: 0; left: 0; height: 100%; width: 50%; background: #9BC33A; animation: loadingBar 1s infinite ease-in-out; }
-            
-            @keyframes pulseText { 0% { opacity: 0.8; transform: scale(0.98); } 100% { opacity: 1; transform: scale(1); } }
-            @keyframes loadingBar { 0% { left: -50%; } 100% { left: 100%; } }
-            
-            /* --- THE ULTIMATE LOGO LOCK --- */
-            header .navbar-brand, header.sticky .navbar-brand, header.sticky.sticky-active .navbar-brand {
-                padding: 15px 0 !important; 
-                margin: 0 !important;
-            }
-            img.bizzer-custom-logo {
-                height: 70px !important; 
-                max-height: 70px !important;
-                width: auto !important;
-                display: block !important;
-                transition: none !important; 
-            }
-
-            /* BIGGER PARTNER LOGOS */
-            .partner-logo-img {
-                height: 85px !important; 
-                width: auto !important;
-                object-fit: contain;
-                /* filter: grayscale(100%); */
-                transition: filter 0.3s ease;
-            }
-            .partner-logo-img:hover {
-                filter: grayscale(0%);
-            }
-        </style>
     </head>
-    <body data-mobile-nav-style="classic" class="custom-cursor">
-
-        <div class="bizzer-preloader">
-            <div class="preloader-content">
-                <h1 class="bizzer-title">BIZZER</h1>
-                <span class="bizzer-subtitle">Insurance Brokers</span>
-                <div class="loading-bar"></div>
-            </div>
-        </div>
-
-        <div class="cursor-page-inner">
-            <div class="circle-cursor circle-cursor-inner"></div>
-            <div class="circle-cursor circle-cursor-outer"></div>
-        </div>
-
-        <header class="header-with-topbar">
-            <div class="header-top-bar top-bar-dark bg-very-light-gray">
-                <div class="container-fluid">
-                    <div class="row h-45px xs-h-auto align-items-center m-0 xs-pt-5px xs-pb-5px">
-                        <div class="col-lg-6 col-md-7 text-center text-md-start xs-px-0">
-                            <div class="fs-15 text-dark-gray fw-500">
-                                <i class="feather icon-feather-map-pin me-5px text-base-color"></i>108 Fox Street, Marshalltown, Johannesburg
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-5 text-end d-none d-md-flex">
-                            <div class="widget fs-15 fw-500 me-35px lg-me-25px md-me-0 text-dark-gray"><a href="tel:0861370164"><i class="feather icon-feather-phone-call"></i>0861 370 164</a></div>
-                            <div class="widget fs-15 fw-500 text-dark-gray d-none d-lg-inline-block"><a href="mailto:info@bizzerinsurance.co.za"><i class="feather icon-feather-mail"></i>info@bizzerinsurance.co.za</a></div> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <nav class="navbar navbar-expand-lg header-light bg-white responsive-sticky">
-                <div class="container-fluid">
-                    <div class="col-auto col-lg-auto me-lg-0 me-auto">
+    <body data-mobile-nav-style="classic">
+        <!-- start header -->
+        <header>
+            <!-- start navigation -->
+            <nav class="navbar navbar-expand-lg header-light header-reverse header-demo" data-header-hover="light">
+                <div class="container-fluid"> 
+                    <div class="col-auto col-lg-2 me-lg-0 me-auto">
                         <a class="navbar-brand" href="index.html">
-                            <img src="images/bizzer/logo-trans.png" alt="Bizzer Insurance Brokers" class="bizzer-custom-logo">
+                            <img src="images/logo.jpeg" data-at2x="images/logo-black@2x.png" alt="" class="default-logo">
+                            <img src="images/logo.jpeg" data-at2x="images/logo-black@2x.png" alt="" class="alt-logo">
+                            <img src="images/logo.jpeg" data-at2x="images/logo-black@2x.png" alt="" class="mobile-logo">
                         </a>
                     </div>
-                    <div class="col-auto menu-order position-static">
+                    <div class="col-auto col-lg-8 menu-order position-static">
                         <button class="navbar-toggler float-start" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
                             <span class="navbar-toggler-line"></span>
                             <span class="navbar-toggler-line"></span>
                             <span class="navbar-toggler-line"></span>
                             <span class="navbar-toggler-line"></span>
                         </button>
-                        <div class="collapse navbar-collapse" id="navbarNav"> 
-                            <ul class="navbar-nav fw-600">
-                                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li> 
-                                <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
-                                <li class="nav-item dropdown dropdown-with-icon-style02">
-                                    <a href="services.html" class="nav-link">Services</a>
-                                    <i class="fa-solid fa-angle-down dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
-                                        <li><a href="funeral-cover.html"><img src="images/demo-accounting-company-icon03.svg" alt="">Funeral Cover</a></li>
-                                        <!-- <li><a href="tracking.html"><img src="images/demo-accounting-company-icon-05.svg" alt="">Advanced Tracking</a></li> -->
-                                        <li><a href="call-center.html"><img src="images/demo-accounting-company-icon-04.svg" alt="">Outbound Call Center</a></li>
-                                    </ul>
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarNav"> 
+                            <ul class="navbar-nav"> 
+                                <li class="nav-item dropdown submenu">
+                                    <a href="javascript:void(0);" class="nav-link">Pre-Built Sites</a>
+                                    <i class="fa-solid fa-angle-down dropdown-toggle" id="navbarDropdownMenuLink1" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                    <div class="dropdown-menu submenu-content background-position-center cover-background" aria-labelledby="navbarDropdownMenuLink1" style="background-image: url(images/pre-built-sites-bg.jpg)"> 
+                                        <div class="d-lg-flex mega-menu m-auto">
+                                            <ul class="col">
+                                                <li><a href="demo-corporate.html" target="_blank">Corporate<span class="label bg-solitude-blue text-cornflower-blue border-radius-26px">Trendy</span></a></li>
+                                                <li><a href="demo-marketing.html" target="_blank">Marketing</a></li>
+                                                <li><a href="demo-accounting.html" target="_blank">Accounting<span class="label bg-light-red text-red border-radius-26px">Classic</span></a></li>
+                                                <li><a href="demo-beauty-salon.html" target="_blank">Beauty Salon</a></li>
+                                                <li><a href="demo-architecture.html" target="_blank">Architecture</a></li>
+                                                <li><a href="demo-ebook.html" target="_blank">eBook</a></li>
+                                                <li><a href="demo-seo-agency.html" target="_blank">SEO Agency</a></li>
+                                                <li><a href="demo-hosting.html" target="_blank">Hosting</a></li>
+<li><a href="demo-recruitment.html" target="_blank">Recruitment<span class="label bg-white-ice text-jade border-radius-26px">New</span></a></li>
+                                                <li><a href="demo-consulting.html" target="_blank">Consulting</a></li>
+                                                <li><a href="demo-green-energy.html" target="_blank">Green Energy</a></li>
+                                                <li><a href="demo-business.html" target="_blank">Business</a></li>
+                                                <li><a href="demo-interactive-portfolio.html" target="_blank">Interactive Portfolio</a></li>
+                                                <li><a href="demo-spa-salon.html" target="_blank">Spa Salon<span class="label bg-light-majorelle-blue text-majorelle-blue border-radius-26px">Clean</span></a></li>
+                                            </ul>
+                                            <ul class="col">
+                                                <li><a href="demo-branding-agency.html" target="_blank">Branding Agency</a></li>
+<li><a href="demo-branding-studio.html" target="_blank">Branding Studio<span class="label bg-white-ice text-jade border-radius-26px">New</span></a></li>
+                                                <li><a href="demo-elearning.html" target="_blank">eLearning</a></li>
+                                                <li><a href="demo-it-business.html" target="_blank">IT Business<span class="label bg-light-majorelle-blue text-majorelle-blue border-radius-26px">Modern</span></a></li>
+                                                <li><a href="demo-barber.html" target="_blank">Barber</a></li>
+                                                <li><a href="demo-hotel-and-resort.html" target="_blank">Hotel & Resort</a></li>
+                                                <li><a href="demo-real-estate.html" target="_blank">Real Estate</a></li>
+                                                <li><a href="demo-jewellery-store.html" target="_blank">Jewellery Store</a></li>
+                                                <li><a href="demo-travel-agency.html" target="_blank">Travel Agency</a></li>
+                                                <li><a href="demo-gym-and-fitness.html" target="_blank">Gym & Fitness</a></li> 
+                                                <li><a href="demo-logistics.html" target="_blank">Logistics</a></li>  
+                                                <li><a href="demo-design-agency.html" target="_blank">Design Agency<span class="label bg-light-red text-red border-radius-26px">Creative</span></a></li> 
+                                                <li><a href="demo-photography.html" target="_blank">Photography</a></li>
+                                                <li><a href="demo-pizza-parlor.html" target="_blank">Pizza Parlor</a></li>
+                                            </ul>
+                                            <ul class="col"> 
+                                                <li><a href="demo-restaurant.html" target="_blank">Restaurant<span class="label bg-light-red text-red border-radius-26px">Hot</span></a></li>
+                                                <li><a href="demo-scattered-portfolio.html" target="_blank">Scattered Portfolio</a></li>
+                                                <li><a href="demo-data-analysis.html" target="_blank">Data Analysis</a></li>
+                                                <li><a href="demo-medical.html" target="_blank">Medical</a></li>
+                                                <li><a href="demo-horizontal-portfolio.html" target="_blank">Horizontal Portfolio</a></li>
+                                                <li><a href="demo-product-showcase.html" target="_blank">Product Showcase<span class="label bg-solitude-blue text-cornflower-blue border-radius-26px">Trendy</span></a></li>
+                                                <li><a href="demo-finance.html" target="_blank">Finance</a></li>
+                                                <li><a href="demo-elder-care.html" target="_blank">Elder Care</a></li>
+                                                <li><a href="demo-fashion-store.html" target="_blank">Fashion Store</a></li>
+<li><a href="demo-clothing-store.html" target="_blank">Clothing Store<span class="label bg-white-ice text-jade border-radius-26px">New</span></a></li>
+                                                <li><a href="demo-music-onepage.html" target="_blank">Music</a></li>
+                                                <li><a href="demo-vertical-portfolio.html" target="_blank">Vertical Portfolio</a></li>
+                                                <li><a href="demo-freelancer.html" target="_blank">Freelancer<span class="label bg-light-majorelle-blue text-majorelle-blue border-radius-26px">Clean</span></a></li>
+                                                <li><a href="demo-charity.html" target="_blank">Charity</a></li>
+                                            </ul>
+                                            <ul class="col"> 
+                                                <li><a href="demo-digital-agency.html" target="_blank">Digital Agency</a></li>
+                                                <li><a href="demo-web-agency.html" target="_blank">Web Agency<span class="label bg-light-red text-red border-radius-26px">Creative</span></a></li>
+                                                <li><a href="demo-yoga-and-meditation.html" target="_blank">Yoga & Meditation</a></li>
+                                                <li><a href="demo-startup.html" target="_blank">Startup</a></li>
+                                                <li><a href="demo-modern-business.html" target="_blank">Modern Business<span class="label bg-white-ice text-jade border-radius-26px">New</span></a></li>
+<li><a href="demo-application.html" target="_blank">Application</a></li>
+                                                <li><a href="demo-lawyer.html" target="_blank">Lawyer</a></li>
+                                                <li><a href="demo-cryptocurrency.html" target="_blank">Cryptocurrency</a></li>
+                                                <li><a href="demo-conference.html" target="_blank">Conference</a></li>
+                                                <li><a href="demo-minimal-portfolio.html" target="_blank">Minimal Portfolio<span class="label bg-light-red text-red border-radius-26px">Hot</span></a></li> 
+                                                <li><a href="demo-decor-store.html" target="_blank">Decor Store</a></li>  
+                                                <li><a href="demo-magazine.html" target="_blank">Magazine</a></li>
+                                                <li><a href="demo-blogger.html" target="_blank">Blogger</a></li>
+                                                <li><a href="demo-wedding-invitation.html" target="_blank">Wedding Invitation</a></li>
+                                            </ul>
+                                        </div> 
+                                    </div> 
                                 </li>
-                                <li class="nav-item"><a href="register.html" class="nav-link">Register</a></li>
-                                <li class="nav-item"><a href="claim.html" class="nav-link">Submit Claim</a></li> 
-                                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                                <li class="nav-item dropdown submenu">
+                                    <a href="javascript:void(0);" class="nav-link">Pages</a>
+                                    <i class="fa-solid fa-angle-down dropdown-toggle" id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                    <div class="dropdown-menu submenu-content" aria-labelledby="navbarDropdownMenuLink2"> 
+                                        <div class="d-lg-flex mega-menu m-auto">
+                                            <ul class="col">
+                                                <li class="sub-title">About Pages</li>
+                                                <li><a href="demo-branding-agency-about.html" target="_blank">About - Branding<span class="label bg-light-red text-red border-radius-26px">Hot</span></a></li>
+                                                <li><a href="demo-restaurant-about.html" target="_blank">About - Restaurant</a></li>
+                                                <li><a href="demo-minimal-portfolio-about.html" target="_blank">About - Minimal</a></li>
+                                                <li><a href="demo-accounting-company.html" target="_blank">About - Accounting</a></li>
+                                                <li><a href="demo-architecture-about.html" target="_blank">About - Architecture</a></li>
+                                                <li><a href="demo-digital-agency-about.html" target="_blank">About - Digital</a></li>
+                                                <li><a href="demo-photography-about.html" target="_blank">About - Photography</a></li>
+                                                <li><a href="demo-design-agency-about.html" target="_blank">About - Agency</a></li>
+                                                <li><a href="demo-marketing-about.html" target="_blank">About - Marketing<span class="label bg-white-ice text-jade border-radius-26px">New</span></a></li>
+                                                <li><a href="demo-scattered-portfolio-about.html" target="_blank">About - Scattered</a></li>
+                                                <li><a href="demo-medical-about.html" target="_blank">About - Medical</a></li>
+                                                <li><a href="demo-web-agency-about.html" target="_blank">About - Web<span class="label bg-light-red text-red border-radius-26px">Hot</span></a></li>
+                                                <li><a href="demo-startup-who-we-are.html" target="_blank">About - Startup</a></li>
+                                                <li><a href="demo-hotel-and-resort-about-us.html" target="_blank">About - Hotel</a></li>
+                                                <li><a href="demo-elearning-about.html" target="_blank">About - eLearning<span class="label bg-solitude-blue text-cornflower-blue border-radius-26px">New</span></a></li>
+                                            </ul>
+                                            <ul class="col">
+                                                <li class="sub-title">Services Pages</li>
+                                                <li><a href="demo-accounting-services.html" target="_blank">Services - Accounting</a></li>
+                                                <li><a href="demo-marketing-services.html" target="_blank">Services - Marketing</a></li>
+                                                <li><a href="demo-branding-agency-services.html" target="_blank">Services - Branding<span class="label bg-solitude-blue text-cornflower-blue border-radius-26px">New</span></a></li>
+                                                <li><a href="demo-minimal-portfolio-expertise.html" target="_blank">Services - Minimal</a></li>
+                                                <li><a href="demo-web-agency-expertise.html" target="_blank">Services - Web</a></li>
+                                                <li><a href="demo-architecture-services.html" target="_blank">Services - Architecture</a></li>
+                                                <li><a href="demo-digital-agency-expertise.html" target="_blank">Services - Digital</a></li> 
+                                                <li><a href="demo-startup-services.html" target="_blank">Services - Startup</a></li> 
+                                                <li><a href="demo-scattered-portfolio-expertise.html" target="_blank">Services - Scattered</a></li> 
+                                                <li><a href="demo-lawyer-practice-areas.html" target="_blank">Services - Lawyer</a></li> 
+                                                <li><a href="demo-corporate-services.html" target="_blank">Services - Corporate<span class="label bg-white-ice text-jade border-radius-26px">New</span></a></li> 
+                                                <li><a href="demo-data-analysis-what-we-do.html" target="_blank">Services - Data Analysis</a></li> 
+                                                <li><a href="demo-marketing-services-details.html" target="_blank">Single – Marketing</a></li> 
+                                                <li><a href="demo-accounting-services-details.html" target="_blank">Single – Accounting</a></li> 
+                                                <li><a href="demo-branding-agency-services-detail.html" target="_blank">Single - Branding<span class="label bg-light-red text-red border-radius-26px">Hot</span></a></li> 
+                                            </ul>
+                                            <ul class="col">
+                                                <li class="sub-title">Contact Pages</li>
+                                                <li><a href="demo-scattered-portfolio-contact.html" target="_blank">Contact - Scattered</a></li>
+                                                <li><a href="demo-branding-agency-contact.html" target="_blank">Contact - Branding<span class="label bg-solitude-blue text-cornflower-blue border-radius-26px">New</span></a></li>
+                                                <li><a href="demo-photography-contact.html" target="_blank">Contact - Photography</a></li>
+                                                <li><a href="demo-hotel-and-resort-contact.html" target="_blank">Contact - Hotel</a></li>
+                                                <li><a href="demo-spa-salon-contact.html" target="_blank">Contact - Spa</a></li>
+                                                <li><a href="demo-it-business-contact.html" target="_blank">Contact - IT Business<span class="label bg-light-red text-red border-radius-26px">Hot</span></a></li>
+                                                <li><a href="demo-architecture-contact.html" target="_blank">Contact - Architecture</a></li>
+                                                <li><a href="demo-design-agency-contact.html" target="_blank">Contact - Agency</a></li>
+                                                <li><a href="demo-marketing-contact.html" target="_blank">Contact - Marketing</a></li>
+                                                <li><a href="demo-horizontal-portfolio-contact.html" target="_blank">Contact - Portfolio</a></li>
+                                                <li><a href="demo-accounting-contact.html" target="_blank">Contact - Accounting</a></li>
+                                                <li><a href="demo-elearning-contact.html" target="_blank">Contact - eLearning</a></li>
+                                                <li><a href="demo-corporate-contact.html" target="_blank">Contact - Corporate</a></li>
+                                                <li><a href="demo-real-estate-contact.html" target="_blank">Contact - Real Estate</a></li>
+                                                <li><a href="demo-web-agency-contact.html" target="_blank">Contact - Web</a></li> 
+                                            </ul>
+                                            <ul class="col">
+                                                <li class="sub-title">Other Pages</li>
+                                                <li><a href="demo-corporate-pricing.html" target="_blank">Pricing - Corporate</a></li>
+                                                <li><a href="demo-hosting-pricing.html" target="_blank">Pricing - Hosting</a></li>
+                                                <li><a href="demo-data-analysis-pricing.html" target="_blank">Pricing - Data Analysis</a></li>
+                                                <li><a href="demo-marketing-pricing.html" target="_blank">Pricing - Marketing<span class="label bg-white-ice text-jade border-radius-26px">New</span></a></li>
+                                                <li><a href="demo-consulting-process.html" target="_blank">Process - Consulting</a></li>
+                                                <li><a href="demo-accounting-process.html" target="_blank">Process - Accounting</a></li>
+                                                <li><a href="demo-startup-clients.html" target="_blank">Clients - Startup</a></li>
+                                                <li><a href="demo-business-clients.html" target="_blank">Clients - Business</a></li>
+                                                <li><a href="demo-corporate-customer-stories.html" target="_blank">Testimonials - Corporate</a></li>
+                                                <li><a href="demo-data-analysis-testimonials.html" target="_blank">Reviews - Data Analysis</a></li>
+                                                <li><a href="demo-finance-team.html" target="_blank">Team - Finance</a></li>
+                                                <li><a href="demo-marketing-team.html" target="_blank">Team - Marketing</a></li>
+                                                <li><a href="demo-web-agency-people.html" target="_blank">Team - Web<span class="label bg-light-red text-red border-radius-26px">Hot</span></a></li>
+                                                <li><a href="demo-restaurant-chefs.html" target="_blank">Chefs - Restaurant</a></li>
+                                                <li><a href="demo-pizza-parlor-chefs.html" target="_blank">Chefs - Pizza Parlor</a></li> 
+                                            </ul>
+                                            <ul class="col">
+                                                <li class="sub-title">Other Pages</li>
+                                                <li><a href="demo-real-estate-agents.html" target="_blank">Agents - Real Estate</a></li>
+                                                <li><a href="demo-elearning-instructors.html" target="_blank">Instructors - eLearning</a></li>
+                                                <li><a href="demo-hotel-and-resort-amenities.html" target="_blank">Amenities - Hotel</a></li>
+                                                <li><a href="demo-medical-timetable.html" target="_blank">Timetable - Medical</a></li>
+                                                <li><a href="demo-photography-award.html" target="_blank">Award - Photography</a></li>
+                                                <li><a href="demo-decor-store-faq.html" target="_blank">FAQ - Decor Store</a></li> 
+                                                <li><a href="demo-charity-causes.html" target="_blank">Causes - Charity</a></li> 
+                                                <li><a href="demo-restaurant-menu.html" target="_blank">Menu - Restaurant</a></li> 
+                                                <li><a href="demo-hotel-and-resort-bistro.html" target="_blank">Menu - Hotel<span class="label bg-solitude-blue text-cornflower-blue border-radius-26px">New</span></a></li> 
+                                                <li><a href="demo-pizza-parlor-menu.html" target="_blank">Menu - Pizza</a></li> 
+                                                <li><a href="demo-application-features.html" target="_blank">Features - Application</a></li> 
+                                                <li><a href="404.html">Error 404</a></li> 
+                                                <li><a href="search-result.html">Search Results</a></li> 
+                                                <li><a href="maintenance.html">Maintenance</a></li> 
+                                                <li><a href="coming-soon.html">Coming Soon</a></li>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown simple-dropdown">
+                                    <a href="javascript:void(0);" class="nav-link">Portfolio</a>
+                                    <i class="fa-solid fa-angle-down dropdown-toggle" id="navbarDropdownMenuLink3" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3"> 
+                                        <li class="dropdown">
+                                            <a href="javascript:void(0);">Portfolio Classic<i class="fa-solid fa-angle-right"></i></a>
+                                            <ul class="dropdown-menu"> 
+                                                <li><a href="portfolio-classic-two-column.html">Classic 2 Column</a></li>
+                                                <li><a href="portfolio-classic-three-column.html">Classic 3 Column</a></li>
+                                                <li><a href="portfolio-classic-four-column.html">Classic 4 Column</a></li>
+                                                <li><a href="portfolio-classic-masonry.html">Classic Masonry</a></li>
+                                                <li><a href="portfolio-classic-metro.html">Classic Metro</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="javascript:void(0);">Portfolio Boxed<i class="fa-solid fa-angle-right"></i></a>
+                                            <ul class="dropdown-menu"> 
+                                                <li><a href="portfolio-boxed-two-column.html">Boxed 2 Column</a></li>
+                                                <li><a href="portfolio-boxed-three-column.html">Boxed 3 Column</a></li>
+                                                <li><a href="portfolio-boxed-four-column.html">Boxed 4 Column</a></li>
+                                                <li><a href="portfolio-boxed-masonry.html">Boxed Masonry</a></li>
+                                                <li><a href="portfolio-boxed-metro.html">Boxed Metro</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="javascript:void(0);">Portfolio Transform<i class="fa-solid fa-angle-right"></i></a>
+                                            <ul class="dropdown-menu"> 
+                                                <li><a href="portfolio-transform-two-column.html">Transform 2 Column</a></li>
+                                                <li><a href="portfolio-transform-three-column.html">Transform 3 Column</a></li>
+                                                <li><a href="portfolio-transform-four-column.html">Transform 4 Column</a></li>
+                                                <li><a href="portfolio-transform-masonry.html">Transform Masonry</a></li>
+                                                <li><a href="portfolio-transform-metro.html">Transform Metro</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="javascript:void(0);">Portfolio Creative<i class="fa-solid fa-angle-right"></i></a>
+                                            <ul class="dropdown-menu"> 
+                                                <li><a href="portfolio-creative-two-column.html">Creative 2 Column</a></li>
+                                                <li><a href="portfolio-creative-three-column.html">Creative 3 Column</a></li>
+                                                <li><a href="portfolio-creative-four-column.html">Creative 4 Column</a></li>
+                                                <li><a href="portfolio-creative-masonry.html">Creative Masonry</a></li>
+                                                <li><a href="portfolio-creative-metro.html">Creative Metro</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="javascript:void(0);">Portfolio Attractive<i class="fa-solid fa-angle-right"></i></a>
+                                            <ul class="dropdown-menu"> 
+                                                <li><a href="portfolio-attractive-two-column.html">Attractive 2 Column</a></li>
+                                                <li><a href="portfolio-attractive-three-column.html">Attractive 3 Column</a></li>
+                                                <li><a href="portfolio-attractive-four-column.html">Attractive 4 Column</a></li>
+                                                <li><a href="portfolio-attractive-masonry.html">Attractive Masonry</a></li>
+                                                <li><a href="portfolio-attractive-metro.html">Attractive Metro</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="javascript:void(0);">Portfolio Clean<i class="fa-solid fa-angle-right"></i></a>
+                                            <ul class="dropdown-menu"> 
+                                                <li><a href="portfolio-clean-two-column.html">Clean 2 Column</a></li>
+                                                <li><a href="portfolio-clean-three-column.html">Clean 3 Column</a></li>
+                                                <li><a href="portfolio-clean-four-column.html">Clean 4 Column</a></li>
+                                                <li><a href="portfolio-clean-masonry.html">Clean Masonry</a></li>
+                                                <li><a href="portfolio-clean-metro.html">Clean Metro</a></li>
+                                            </ul>
+                                        </li> 
+                                        <li class="dropdown">
+                                            <a href="javascript:void(0);">Portfolio Simple<i class="fa-solid fa-angle-right"></i></a>
+                                            <ul class="dropdown-menu"> 
+                                                <li><a href="portfolio-simple-two-column.html">Simple 2 Column</a></li>
+                                                <li><a href="portfolio-simple-three-column.html">Simple 3 Column</a></li>
+                                                <li><a href="portfolio-simple-four-column.html">Simple 4 Column</a></li>
+                                                <li><a href="portfolio-simple-masonry.html">Simple Masonry</a></li>
+                                                <li><a href="portfolio-simple-metro.html">Simple Metro</a></li>
+                                            </ul>
+                                        </li> 
+                                        <li class="dropdown">
+                                            <a href="javascript:void(0);">Portfolio Modern<i class="fa-solid fa-angle-right"></i></a>
+                                            <ul class="dropdown-menu"> 
+                                                <li><a href="portfolio-modern-two-column.html">Modern 2 Column</a></li>
+                                                <li><a href="portfolio-modern-three-column.html">Modern 3 Column</a></li>
+                                                <li><a href="portfolio-modern-four-column.html">Modern 4 Column</a></li>
+                                                <li><a href="portfolio-modern-masonry.html">Modern Masonry</a></li>
+                                                <li><a href="portfolio-modern-metro.html">Modern Metro</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="javascript:void(0);">Portfolio Other<i class="fa-solid fa-angle-right"></i></a>
+                                            <ul class="dropdown-menu"> 
+                                                <li><a href="portfolio-slider.html">Portfolio Slider</a></li>
+                                                <li><a href="portfolio-parallax.html">Portfolio Parallax</a></li>
+                                                <li><a href="portfolio-justified-gallery.html">Justified Gallery</a></li> 
+                                            </ul>
+                                        </li> 
+                                        <li class="dropdown">
+                                            <a href="javascript:void(0);">Single Project<i class="fa-solid fa-angle-right"></i></a>
+                                            <ul class="dropdown-menu"> 
+                                                <li><a href="demo-digital-agency-single-project-minimal.html" target="_blank">Single - Minimal</a></li>
+                                                <li><a href="demo-branding-agency-single-project-slider.html" target="_blank">Single - Slider</a></li>
+                                                <li><a href="demo-architecture-single-project-gallery.html" target="_blank">Single - Gallery</a></li>
+                                                <li><a href="demo-interactive-portfolio-single-project-modern.html" target="_blank">Single - Modern</a></li>
+                                                <li><a href="demo-design-agency-single-project-simple.html" target="_blank">Single - Simple</a></li>
+                                                <li><a href="demo-web-agency-single-project-creative.html" target="_blank">Single - Creative</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li> 
+                                <li class="nav-item dropdown submenu">
+                                    <a href="javascript:void(0);" class="nav-link">Elements</a>
+                                    <i class="fa-solid fa-angle-down dropdown-toggle" id="navbarDropdownMenuLink4" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                    <div class="dropdown-menu submenu-content" aria-labelledby="navbarDropdownMenuLink4"> 
+                                        <div class="d-lg-flex mega-menu m-auto">
+                                            <ul class="col">
+                                                <li><a href="element-accordion.html">Accordion</a></li>
+                                                <li><a href="element-buttons.html">Button</a></li> 
+                                                <li><a href="element-team.html">Team</a></li>
+                                                <li><a href="element-testimonials.html">Testimonials<span class="label bg-white-ice text-jade border-radius-26px">New</span></a></li>
+                                                <li><a href="element-clients.html">Clients</a></li>
+                                                <li><a href="element-review.html">Review</a></li>
+                                                <li><a href="element-subscribe.html">Subscribe</a></li>
+                                                <li><a href="element-call-to-action.html">Call to Action</a></li>
+                                                <li><a href="element-tab.html">Tab<span class="label bg-light-red text-red border-radius-26px">Hot</span></a></li>
+                                                <li><a href="element-google-map.html">Google Map<span class="label bg-solitude-blue text-cornflower-blue border-radius-26px">New</span></a></li>
+                                                <li><a href="element-contact-form.html">Contact Form</a></li>
+                                                <li><a href="element-columns.html">Columns</a></li>
+                                                <li><a href="element-alert-boxes.html">Alert Boxes</a></li>
+                                                <li><a href="element-image-gallery.html">Image Gallery</a></li> 
+                                            </ul>
+                                            <ul class="col">
+                                                <li><a href="element-progress-bar.html">Progress Bar</a></li>
+                                                <li><a href="element-process-step.html">Process Step<span class="label bg-white-ice text-jade border-radius-26px">New</span></a></li>
+                                                <li><a href="element-icon-with-text.html">Icon with Text<span class="label bg-light-red text-red border-radius-26px">Hot</span></a></li>
+                                                <li><a href="element-shape-dividers.html">Shape Dividers</a></li>
+                                                <li><a href="element-counters.html">Counters</a></li>
+                                                <li><a href="element-countdown.html">Countdown</a></li>
+                                                <li><a href="element-fancy-text-box.html">Fancy Text Box</a></li> 
+                                                <li><a href="element-heading.html">Heading</a></li>
+                                                <li><a href="element-dropcaps.html">Dropcaps</a></li>
+                                                <li><a href="element-blockquote.html">Blockquote</a></li>
+                                                <li><a href="element-highlights.html">Highlights</a></li>
+                                                <li><a href="element-lists.html">Lists</a></li>
+                                                <li><a href="element-social-icons.html">Social Icons</a></li>
+                                                <li><a href="element-pricing-table.html">Pricing Table</a></li>
+                                            </ul>
+                                            <ul class="col"> 
+                                                <li><a href="element-interactive-banners.html">Interactive Banners</a></li>
+                                                <li><a href="element-services-box.html">Services Box</a></li>  
+                                                <li><a href="element-rotate-box.html">Rotate Box<span class="label bg-solitude-blue text-cornflower-blue border-radius-26px">New</span></a></li> 
+                                                <li><a href="element-instagram.html">Instagram</a></li>
+                                                <li><a href="element-parallax-scrolling.html">Parallax Scrolling</a></li>
+                                                <li><a href="element-sliding-box.html">Sliding Box<span class="label bg-white-ice text-jade border-radius-26px">New</span></a></li>
+                                                <li><a href="element-content-carousel.html">Content Carousel</a></li>
+                                                <li><a href="element-media.html">Media</a></li> 
+                                                <li><a href="element-event.html">Event</a></li> 
+                                                <li><a href="element-dividers.html">Dividers</a></li>
+                                                <li><a href="element-horizontal-list-item.html">Horizontal List Item</a></li> 
+                                                <li><a href="element-banners.html">Banners</a></li> 
+                                                <li><a href="element-carousel.html">Carousel</a></li> 
+                                                <li><a href="element-tilt-effect.html">Tilt Effect<span class="label bg-light-red text-red border-radius-26px">Hot</span></a></li> 
+                                            </ul>
+                                            <ul class="col premium-element cover-background" style="background-image: url(images/premium-elements-bg.jpg)">
+                                                <li class="sub-title">Premium Elements</li>
+                                                <li><a href="element-adaptive-backgrounds.html">Adaptive Backgrounds</a></li>
+                                                <li><a href="element-sticky-column.html">Sticky Column</a></li>
+                                                <li><a href="element-3d-parallax-hover.html">3D Parallax Hover</a></li>
+                                                <li><a href="demo-restaurant.html" target="_blank">Custom Cursor</a></li>
+                                                <li><a href="element-animated-particles.html">Animated Particles</a></li>
+                                                <li><a href="element-marquee.html">Marquee</a></li>
+                                                <li><a href="element-fancy-heading.html">Fancy Heading</a></li>
+                                                <li><a href="element-fancy-images.html">Fancy Images</a></li>
+<li><a href="element-stack-section.html">Stack Section</a></li>
+                                                <li><a href="element-scrolling-effects.html">Scrolling Effects</a></li>
+                                            </ul>
+                                        </div> 
+                                    </div> 
+                                </li>
+                                <li class="nav-item dropdown simple-dropdown">
+                                    <a href="javascript:void(0);" class="nav-link">Features</a>
+                                    <i class="fa-solid fa-angle-down dropdown-toggle" id="navbarDropdownMenuLink5" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink5"> 
+                                        <li class="dropdown">
+                                            <a href="javascript:void(0);">Header<i class="fa-solid fa-angle-right"></i></a>
+                                            <ul class="dropdown-menu"> 
+                                                <li><a href="demo-business.html" target="_blank">Transparent Header</a></li>
+                                                <li><a href="demo-corporate.html" target="_blank">White Header</a></li>
+                                                <li><a href="header-dark.html" target="_blank">Dark Header</a></li>
+                                                <li><a href="demo-digital-agency.html" target="_blank">Left Navigation</a></li>
+                                                <li><a href="demo-branding-agency.html" target="_blank">Right Navigation</a></li>
+                                                <li><a href="demo-restaurant.html" target="_blank">Center Navigation</a></li>
+                                                <li><a href="demo-data-analysis.html" target="_blank">Header with Top Bar</a></li>
+                                                <li><a href="demo-startup.html" target="_blank">Header with Push</a></li>
+                                                <li><a href="demo-pizza-parlor.html" target="_blank">Center Logo</a></li>
+                                                <li><a href="header-top-logo.html" target="_blank">Top Logo</a></li>
+                                                <li><a href="demo-ebook.html" target="_blank">One Page Navigation</a></li>
+                                                <li><a href="header-mini.html" target="_blank">Mini Header</a></li>
+                                                <li><a href="demo-seo-agency.html" target="_blank">Header with Button</a></li>
+                                                <li><a href="demo-marketing.html" target="_blank">Header with Social</a></li>
+                                                <li class="dropdown">
+                                                    <a href="javascript:void(0);">Left Menu<i class="fa-solid fa-angle-right"></i></a>
+                                                    <ul class="dropdown-menu"> 
+                                                        <li><a href="header-left-menu-simple.html" target="_blank">Left Menu Simple</a></li>
+                                                        <li><a href="demo-minimal-portfolio.html" target="_blank">Left Menu Modern</a></li> 
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown">
+                                                    <a href="javascript:void(0);">Hamburger Menu<i class="fa-solid fa-angle-right"></i></a>
+                                                    <ul class="dropdown-menu"> 
+                                                        <li><a href="demo-photography.html" target="_blank">Hamburger Simple</a></li>
+                                                        <li><a href="demo-architecture.html" target="_blank">Hamburger Creative</a></li> 
+                                                        <li><a href="demo-freelancer.html" target="_blank">Hamburger Clean</a></li> 
+                                                        <li><a href="demo-gym-and-fitness.html" target="_blank">Hamburger Modern</a></li> 
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown">
+                                                    <a href="javascript:void(0);">Header Type<i class="fa-solid fa-angle-right"></i></a>
+                                                    <ul class="dropdown-menu"> 
+                                                        <li><a href="header-always-fixed.html" target="_blank">Always Fixed</a></li>
+                                                        <li><a href="demo-application.html" target="_blank">Disable Fixed</a></li> 
+                                                        <li><a href="demo-seo-agency.html" target="_blank">Reverse Auto</a></li>
+                                                        <li><a href="demo-elder-care.html" target="_blank">Reverse Back Scroll</a></li> 
+                                                        <li><a href="demo-accounting.html" target="_blank">Responsive Sticky</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown">
+                                                    <a href="javascript:void(0);">Mobile Menu<i class="fa-solid fa-angle-right"></i></a>
+                                                    <ul class="dropdown-menu"> 
+                                                        <li><a href="demo-startup.html" target="_blank">Classic</a></li>
+                                                        <li><a href="demo-yoga-and-meditation.html" target="_blank">Modern</a></li> 
+                                                        <li><a href="demo-scattered-portfolio.html" target="_blank">Full Screen</a></li>  
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>  
+                                        <li class="dropdown">
+                                            <a href="javascript:void(0);">Lightbox & Modal<i class="fa-solid fa-angle-right"></i></a>
+                                            <ul class="dropdown-menu"> 
+                                                <li><a href="modal-simple.html">Simple Modal</a></li>
+                                                <li><a href="modal-subscription.html">Subscription</a></li>
+                                                <li><a href="modal-contact-form.html">Contact Form</a></li>
+                                                <li><a href="modal-youtube-video.html">Youtube Video</a></li>
+                                                <li><a href="modal-vimeo-video.html">Vimeo Video</a></li>
+                                                <li><a href="modal-google-map.html">Google Map</a></li>
+                                            </ul>
+                                        </li> 
+                                        <li class="dropdown">
+                                            <a href="javascript:void(0);">Icon Packs<i class="fa-solid fa-angle-right"></i></a>
+                                            <ul class="dropdown-menu"> 
+                                                <li><a href="icon-packs-icons-mind-line.html">Icons Mind Line</a></li>
+                                                <li><a href="icon-packs-feather.html">Feather</a></li>
+                                                <li><a href="icon-packs-font-awesome.html">Font Awesome</a></li>
+                                                <li><a href="icon-packs-themify.html">Themify</a></li>
+                                                <li><a href="icon-packs-bootstrap.html">Bootstrap</a></li>
+                                            </ul>
+                                        </li> 
+                                        <li class="dropdown">
+                                            <a href="javascript:void(0);">Sliders<i class="fa-solid fa-angle-right"></i></a>
+                                            <ul class="dropdown-menu"> 
+                                                <li><a href="demo-architecture.html" target="_blank">Revolution</a></li>
+                                                <li><a href="demo-startup.html" target="_blank">Swiper</a></li> 
+                                            </ul>
+                                        </li> 
+                                        <li class="dropdown">
+                                            <a href="animations.html">Animations</a> 
+                                        </li> 
+                                        <li class="dropdown">
+                                            <a href="demo-minimal-portfolio.html" target="_blank">Page Preloader</a> 
+                                        </li> 
+                                        <li class="dropdown">
+                                            <a href="demo-jewellery-store.html" target="_blank">Cookie Notify</a> 
+                                        </li> 
+                                        <li class="dropdown">
+                                            <a href="demo-startup.html" target="_blank">Back to Top</a> 
+                                        </li> 
+                                        <li class="dropdown">
+                                            <a href="demo-design-agency.html" target="_blank">Sticky Footer</a> 
+                                        </li> 
+                                    </ul>
+                                </li> 
+                                <li class="nav-item dropdown simple-dropdown">
+                                    <a href="javascript:void(0);" class="nav-link">Blog</a>
+                                    <i class="fa-solid fa-angle-down dropdown-toggle" id="navbarDropdownMenuLink6" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink6"> 
+                                        <li class="dropdown"><a href="blog-grid.html">Blog Grid</a></li>
+                                        <li class="dropdown"><a href="blog-classic.html">Blog Classic</a></li>
+                                        <li class="dropdown"><a href="blog-metro.html">Blog Metro</a></li>
+                                        <li class="dropdown"><a href="blog-masonry.html">Blog Masonry</a></li>
+                                        <li class="dropdown"><a href="blog-simple.html">Blog Simple</a></li>
+                                        <li class="dropdown"><a href="blog-date.html">Blog Date</a></li>
+                                        <li class="dropdown"><a href="blog-only-text.html">Blog Only Text</a></li>
+                                        <li class="dropdown"><a href="blog-side-image.html">Blog Side Image</a></li>
+                                        <li class="dropdown"><a href="blog-modern.html">Blog Modern</a></li>
+                                        <li class="dropdown"><a href="blog-standard.html">Blog Standard</a></li>
+                                        <li class="dropdown">
+                                            <a href="javascript:void(0);">Single Post<i class="fa-solid fa-angle-right"></i></a>
+                                            <ul class="dropdown-menu"> 
+                                                <li><a href="demo-business-blog-single-modern.html" target="_blank">Single - Modern</a></li>
+                                                <li><a href="demo-elearning-blog-single-simple.html" target="_blank">Single - Simple</a></li>
+                                                <li><a href="demo-web-agency-blog-single-creative.html" target="_blank">Single - Creative</a></li>
+                                                <li><a href="demo-blogger-blog-single-classic.html" target="_blank">Single - Classic</a></li>
+                                                <li><a href="demo-architecture-blog-single-clean.html" target="_blank">Single - Clean</a></li> 
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="javascript:void(0);">Post Type<i class="fa-solid fa-angle-right"></i></a>
+                                            <ul class="dropdown-menu"> 
+                                                <li><a href="blog-post-type-standard.html">Post - Standard</a></li>
+                                                <li><a href="blog-post-type-gallery.html">Post - Gallery</a></li>
+                                                <li><a href="blog-post-type-slider.html">Post - Slider</a></li>
+                                                <li><a href="blog-post-type-audio.html">Post - Audio</a></li>
+                                                <li><a href="blog-post-type-video.html">Post - Video</a></li>
+                                                <li><a href="blog-post-type-blockquote.html">Post - Blockquote</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul> 
+                                </li>
+                                <li class="nav-item dropdown submenu">
+                                    <a href="javascript:void(0);" class="nav-link">Shop</a>
+                                    <i class="fa-solid fa-angle-down dropdown-toggle" id="navbarDropdownMenuLink7" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                    <div class="dropdown-menu submenu-content" aria-labelledby="navbarDropdownMenuLink7"> 
+                                        <div class="d-lg-flex mega-menu m-auto">
+                                            <ul class="col">  
+                                                <li class="sub-title">Shop Layout</li>
+                                                <li><a href="demo-fashion-store-shop.html" target="_blank">Left Sidebar</a></li>
+                                                <li><a href="demo-fashion-store-right-sidebar.html" target="_blank">Right Sidebar</a></li>
+                                                <li><a href="demo-fashion-store-no-sidebar.html" target="_blank">No Sidebar</a></li>
+                                                <li><a href="demo-decor-store-collections.html" target="_blank">Collections - Style 01</a></li>
+                                                <li><a href="demo-jewellery-store-categories.html" target="_blank">Collections - Style 02</a></li>
+                                                <li><a href="demo-fashion-store-collection.html" target="_blank">Collections - Style 03</a></li>
+                                                <li><a href="demo-fashion-store-single-product.html" target="_blank">Single Product - Thumb Left</a></li> 
+                                                <li><a href="demo-decor-store-single-product.html" target="_blank">Single Product - Thumb Bottom</a></li>
+                                            </ul>
+                                            <ul class="col">  
+                                                <li class="sub-title">Utility Pages</li>
+                                                <li><a href="demo-decor-store-cart.html" target="_blank">Shopping Cart</a></li>
+                                                <li><a href="demo-decor-store-checkout.html" target="_blank">Checkout</a></li>
+                                                <li><a href="demo-decor-store-account.html" target="_blank">Login / Register</a></li> 
+                                                <li><a href="demo-decor-store-faq.html" target="_blank">Help Center</a></li>
+                                                <li><a href="demo-fashion-store-wishlist.html" target="_blank">Wishlist</a></li>
+                                            </ul>
+                                            <ul class="col">  
+                                                <li class="sub-title"><a href="index.html" target="_blank" class="p-0"><img src="images/banner-02.jpg" alt=""/></a></li> 
+                                            </ul>
+                                            <ul class="col">  
+                                                <li class="sub-title"><a href="index.html" target="_blank" class="p-0"><img src="images/banner-01.jpg" alt=""/></a></li> 
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-auto col-lg-2 text-end d-none d-sm-flex">
-                        <div class="header-icon"> 
+                    <div class="col-auto col-lg-2 text-end xs-pe-0"> 
+                        <div class="header-icon">  
                             <div class="header-button">
-                                <a href="contact.html" class="btn btn-small btn-rounded btn-base-color btn-box-shadow">Free Quote</a>
+                                <a href="https://1.envato.market/R53mL2" target="_blank" class="btn btn-dark-gray btn-small btn-switch-text btn-rounded text-transform-none btn-box-shadow purchase-envato">
+                                    <span>
+                                        <span class="btn-double-text" data-text="Purchase Crafto">Purchase Crafto</span>
+                                    </span> 
+                                </a> 
                             </div>
-                        </div>  
+                        </div>
                     </div>
                 </div>
             </nav>
+            <!-- end navigation -->
         </header>
-
-        <section class="top-space-margin p-0 full-screen md-h-600px sm-h-500px section-dark position-relative" style="background-image: url('images/bizzer/hero-video-poster.jpg'); background-size: cover; background-position: center;">  
-            
-            <video autoplay loop muted playsinline class="position-absolute left-0px top-0px w-100 h-100" style="object-fit: cover; pointer-events: none;">
-                <source src="images/bizzer/hero-video.mp4" type="video/mp4">
-            </video>
-
-            <div class="position-absolute left-0px top-0px w-100 h-100 bg-dark-gray opacity-6"></div>
-            
-            <div class="container h-100 position-relative">
-                <div class="row align-items-center h-100">
-                    <div class="col-xl-9 col-md-10 col-sm-10 position-relative text-white" data-anime='{ "el": "childs", "opacity": [0, 1], "translateY": [30, 0], "staggervalue": 200, "easing": "easeInOutSine" }'>  
-                        
-                        <div class="fs-70 lh-75 sm-fs-50 fw-600 mb-20px text-shadow-large ls-minus-2px">
-                            All Your Insurance Needs, Covered Under One Roof
-                        </div> 
-                        
-                        <div>
-                            <span class="opacity-8 fs-20 w-80 md-w-95 mb-25px fw-300 d-inline-block">
-                                Bizzer Insurance Brokers—trusted funeral cover, advanced tracking, and a professional call center—here to protect you, every step of the way.
-                            </span> 
-                        </div>
-                        
-                        <div class="icon-with-text-style-08">
-                            <div class="feature-box feature-box-left-icon-middle">
-                                <div class="feature-box-icon feature-box-icon-rounded w-65px h-65px rounded-circle bg-bizzer-green me-15px rounded-box">
-                                    <i class="feather icon-feather-arrow-right text-white icon-extra-medium"></i>
-                                </div>
-                                <div class="feature-box-content">
-                                    <a href="services.html" class="d-inline-block fs-19 text-white text-shadow-double-large text-decoration-line-bottom">
-                                        Explore services
-                                    </a>
-                                </div>
-                            </div> 
-                        </div>
-                        
-                    </div>
-                </div> 
-            </div>
-        </section> 
-        
-        <section class="pt-0">
-            <div class="container">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-lg-6 col-md-11 md-mb-60px sm-mb-40px">
-                        <div class="row mt-10 align-items-center">
-                            <div class="col-xl-5 col-lg-6 col-sm-5 xs-mb-25px text-center">
-                                <div class="position-relative">
-                                    <span class="w-200px h-200px bg-bizzer-green rounded-circle d-inline-block" data-anime='{ "opacity": [0, 1], "staggervalue": 0, "easing": "easeOutQuad" }'></span>
-                                    <span class="fs-140 lg-fs-130 text-dark-gray fw-700 position-absolute left-0px w-100 top-50 ls-minus-5px md-top-40px" data-anime='{ "opacity": [0, 1], "staggervalue": 200, "easing": "easeOutQuad" }'>
-                                        10<span style="font-size: 80px; vertical-align: top;">+</span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="col-xl-7 col-lg-6 col-sm-7 ps-45px lg-ps-15px last-paragraph-no-margin text-center text-sm-start" data-anime='{  "opacity": [0,1], "delay": 100, "staggervalue": 250, "easing": "easeOutQuad" }'>
-                                <h5 class="fw-600 text-dark-gray ls-minus-1px mb-15px">Years working experience.</h5>
-                                <p>We put a strong focus on your peace of mind, delivering tailored funeral cover and tracking solutions that best fit your demands.</p>
-                                <a href="about.html" class="btn btn-link btn-hover-animation-switch btn-extra-large text-base-color text-transform-none fw-600 mt-15px">
-                                    <span>
-                                        <span class="btn-text">Discover now</span>
-                                        <span class="btn-icon"><i class="feather icon-feather-arrow-right"></i></span>
-                                        <span class="btn-icon"><i class="feather icon-feather-arrow-right"></i></span>
-                                    </span> 
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 offset-lg-1 col-md-11 contact-form-style-01 position-relative">
-                        <div class="position-absolute left-minus-25px md-left-minus-5px xs-left-0 top-100px md-top-0px">
-                            <img src="images/demo-accounting-home-left-img.jpg" class="w-40px" alt="">
-                        </div>
-                        <div class="ps-14 pe-14 pt-12 pb-12 lg-p-12 bg-white box-shadow-quadruple-large border-radius-6px">
-                            <h6 class="d-inline-block fw-600 text-dark-gray ls-minus-1px mb-35px sm-mb-25px" data-anime='{ "translateY": [15, 0], "translateX": [-15, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>Request a free quote</h6>
-                            <form action="#" method="post" data-anime='{ "el": "childs", "translateY": [15, 0], "translateX": [-15, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                                <div class="position-relative form-group mb-15px">
-                                    <span class="form-icon"><i class="bi bi-person"></i></span>
-                                    <input type="text" name="name" class="form-control required" placeholder="Your name*" />
-                                </div>
-                                <div class="position-relative form-group mb-15px">
-                                    <span class="form-icon"><i class="bi bi-telephone"></i></span>
-                                    <input type="tel" name="phone" class="form-control required" placeholder="Your phone number*" />
-                                </div>
-                                <div class="position-relative form-group mb-20px">
-                                    <span class="form-icon"><i class="bi bi-briefcase"></i></span>
-                                    <select name="service" class="form-control required" style="appearance: none; padding-left: 45px;">
-                                        <option value="" disabled selected>Select a Service*</option>
-                                        <option value="funeral-cover">Funeral Cover</option>
-                                        <option value="tracking">Advanced Tracking</option>
-                                        <option value="call-center">Call Center Setup</option>
-                                    </select>
-                                </div>
-                                <div class="position-relative mt-20px">
-                                    <button class="btn btn-large btn-round-edge btn-base-color btn-box-shadow submit w-100" type="button">Get free quote</button>
-                                    <div class="form-results mt-20px text-center lh-24 d-none"></div>
-                                </div>
-                            </form>
-                            </div> 
+        <!-- end header -->
+        <!-- start section -->  
+        <section class="cover-background full-screen ipad-top-space-margin md-h-550px" style="background-image: url(images/404-bg.jpg);">
+            <div class="container h-100">
+                <div class="row align-items-center justify-content-center h-100">
+                    <div class="col-12 col-xl-6 col-lg-7 col-md-9 text-center" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        <h6 class="text-dark-gray fw-600 mb-5px text-uppercase">Ooops!</h6>
+                        <h1 class="fs-200 sm-fs-170 text-dark-gray fw-700 ls-minus-8px">404</h1>
+                        <h4 class="text-dark-gray fw-600 sm-fs-22 mb-10px ls-minus-1px">Page not found!</h4>
+                        <p class="mb-30px lh-28 sm-mb-30px w-55 md-w-80 sm-w-95 mx-auto">The resource you are looking for doesn't exist or might have been removed.</p>
+                        <a href="index.html" class="btn btn-large left-icon btn-rounded btn-dark-gray btn-box-shadow text-transform-none"><i class="fa-solid fa-arrow-left"></i>Back to homepage</a>
                     </div>
                 </div>
             </div>
         </section>
-        
-        <section class="bg-very-light-gray overflow-hidden">
+        <!-- end section -->
+        <!-- start footer -->
+        <footer class="footer-demo bg-dark-slate-blue pb-4 sm-pb-50px" style="background-image: url(images/demo-footer-pattern.svg)">
             <div class="container">
-                <div class="row align-items-center justify-content-center mb-6 text-center text-lg-start">
-                    <div class="col-xl-5 col-lg-5 md-mb-20px" data-anime='{ "translateX": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
-                        <h4 class="text-dark-gray fw-700 mb-0 ls-minus-1px">Why choose Bizzer Insurance Brokers as your partner?</h4>
-                    </div>
-                    <div class="col-xl-5 col-lg-5 last-paragraph-no-margin md-mb-30px" data-anime='{ "translateX": [-50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
-                        <p class="w-90 xl-w-100 md-w-80 sm-w-100 md-mx-auto">We put a strong focus on your peace of mind, offering tailored solutions from advanced tracking to Funeral Cover to fit your specific needs.</p>
-                    </div>
-                    <div class="col-xl-2 col-lg-2 d-flex justify-content-center justify-content-lg-end" data-anime='{ "el": "childs", "translateX": [30, 0], "opacity": [0,1], "duration": 800, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'> 
-                        <div class="slider-one-slide-prev-1 icon-small text-dark-gray swiper-button-prev slider-navigation-style-04 bg-white text-dark-gray box-shadow-large"><i class="fa-solid fa-arrow-left"></i></div>
-                        <div class="slider-one-slide-next-1 icon-small text-dark-gray swiper-button-next slider-navigation-style-04 bg-white text-dark-gray box-shadow-large"><i class="fa-solid fa-arrow-right"></i></div>
-                        </div>
-                </div>
-                
-                <div class="row align-items-center">
-                    <div class="col-12 position-relative">
-                        <div class="outside-box-right-40 xs-outside-box-right-0" data-anime='{ "translateX": [100, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
-                            
-                            <div class="swiper magic-cursor" data-slider-options='{ "slidesPerView": 1, "spaceBetween": 28, "loop": true, "autoplay": { "delay": 3000, "disableOnInteraction": false }, "navigation": { "nextEl": ".slider-one-slide-next-1", "prevEl": ".slider-one-slide-prev-1" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1200": { "slidesPerView": 5 }, "992": { "slidesPerView": 4 }, "768": { "slidesPerView": 3 }, "576": { "slidesPerView": 2 } }, "effect": "slide" }'>
-                                <div class="swiper-wrapper">
-                                    
-                                    <div class="swiper-slide">
-                                        <div class="interactive-banner-style-08">
-                                            <figure class="m-0 hover-box overflow-hidden position-relative border-radius-6px">
-                                                <a href="funeral-cover.html">
-                                                    <img src="images/bizzer/funeraltwo.jpeg" alt="Funeral Cover" style="height: 450px; width: 100%; object-fit: cover;" />
-                                                </a>
-                                                <figcaption class="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-14 lg-p-10">
-                                                    <a href="funeral-cover.html"><i class="line-icon-Money-Bag text-white icon-extra-large"></i></a>
-                                                    <div class="mt-auto d-flex w-100 align-items-center">
-                                                        <div class="col last-paragraph-no-margin">
-                                                            <a href="funeral-cover.html" class="text-white fs-24 lh-28 w-65 xl-w-75 d-block">Funeral Cover</a>
-                                                        </div>
-                                                        <a href="funeral-cover.html" class="circle-box bg-bizzer-green w-50px h-50px rounded-circle ms-auto position-relative rounded-box">
-                                                            <i class="bi bi-arrow-right-short absolute-middle-center icon-very-medium lh-0px text-white"></i>
-                                                        </a> 
-                                                    </div>
-                                                    <div class="position-absolute left-0px top-0px w-100 h-100 bg-gradient-gray-light-dark-transparent z-index-minus-1 opacity-9"></div> 
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="interactive-banner-style-08">
-                                            <figure class="m-0 hover-box overflow-hidden position-relative border-radius-6px">
-                                                <a href="tracking.html">
-                                                    <img src="images/bizzer/track.jpeg" alt="Advanced Tracking" style="height: 450px; width: 100%; object-fit: cover;" />
-                                                </a>
-                                                <figcaption class="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-14 lg-p-10">
-                                                    <a href="tracking.html"><i class="line-icon-Location-2 text-white icon-extra-large"></i></a>
-                                                    <div class="mt-auto d-flex w-100 align-items-center">
-                                                        <div class="col last-paragraph-no-margin">
-                                                            <a href="tracking.html" class="text-white fs-24 lh-28 w-65 xl-w-75 d-block">Advanced Tracking</a>
-                                                        </div>
-                                                        <a href="tracking.html" class="circle-box bg-bizzer-green w-50px h-50px rounded-circle ms-auto position-relative rounded-box">
-                                                            <i class="bi bi-arrow-right-short absolute-middle-center icon-very-medium lh-0px text-white"></i>
-                                                        </a> 
-                                                    </div>
-                                                    <div class="position-absolute left-0px top-0px w-100 h-100 bg-gradient-gray-light-dark-transparent z-index-minus-1 opacity-9"></div> 
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="interactive-banner-style-08">
-                                            <figure class="m-0 hover-box overflow-hidden position-relative border-radius-6px">
-                                                <a href="call-center.html">
-                                                    <img src="images/bizzer/service.jpg" alt="Call Center Solutions" style="height: 450px; width: 100%; object-fit: cover;" />
-                                                </a>
-                                                <figcaption class="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-14 lg-p-10">
-                                                    <a href="call-center.html"><i class="line-icon-Headset text-white icon-extra-large"></i></a>
-                                                    <div class="mt-auto d-flex w-100 align-items-center">
-                                                        <div class="col last-paragraph-no-margin">
-                                                            <a href="call-center.html" class="text-white fs-24 lh-28 w-65 xl-w-75 d-block">Call Center Solutions</a>
-                                                        </div>
-                                                        <a href="call-center.html" class="circle-box bg-bizzer-green w-50px h-50px rounded-circle ms-auto position-relative rounded-box">
-                                                            <i class="bi bi-arrow-right-short absolute-middle-center icon-very-medium lh-0px text-white"></i>
-                                                        </a>
-                                                    </div>
-                                                    <div class="position-absolute left-0px top-0px w-100 h-100 bg-gradient-gray-light-dark-transparent z-index-minus-1 opacity-9"></div> 
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
+                <div class="row mb-6 md-mb-30px">
+                    <div class="col-xl-5 col-lg-6 md-mb-30px text-center text-lg-start">
+                        <h3 class="text-white fw-600 alt-font mb-40px ls-minus-1px md-mb-30px md-w-60 sm-w-70 xs-w-100 md-mx-auto">Craft a standout website with crafto.</h3>
+                        <div class="row">
+                            <div class="col-lg-5 col-sm-6 xs-mb-20px">
+                                <span class="alt-font fs-14 fw-600 text-uppercase d-block text-white ls-1px lh-18">Presale questions</span>
+                                <a href="mailto:info@themezaa.com">info@themezaa.com</a>
+                            </div>
+                            <div class="col-lg-5 col-sm-6">
+                                <span class="alt-font fs-14 fw-600 text-uppercase d-block text-white ls-1px lh-18">Getting started</span>
+                                <a href="https://1.envato.market/R53mL2" target="_blank">Purchase on Envato</a>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="p-0 bg-base-color">
-            <div class="container">
-                <div class="row align-items-center justify-content-center g-0">
-                    <div class="col-auto d-flex align-items-center flex-column flex-sm-row text-center text-sm-start" data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
-                        
-                        <img src="images/bizzer/avatars.png" alt="Bizzer Support Team" class="me-sm-30px mb-15px mb-sm-0" style="height: 80px; width: auto; object-fit: contain;">
-                        
-                        <div class="fs-19 lh-28 last-paragraph-no-margin text-white pt-20px pb-20px pt-sm-15px pb-sm-15px">
-                            <p>Save your precious time and effort spent finding a solution. 
-                                <a href="contact.html" class="text-decoration-line-bottom fw-600 text-white ms-5px">Contact us now</a>
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="py-5 bg-white">
-            <div class="container">
-                
-                <div class="row justify-content-center text-center mb-5">
-                    <div class="col-lg-8">
-                        <h3 class="fw-700 text-dark-gray ls-minus-1px">Trusted by leading insurance and financial partners</h3>
-                    </div>
-                </div>
-
-                <div class="row row-cols-1 row-cols-lg-2 justify-content-center mb-7">
-                    
-                    <div class="col md-mb-30px" data-anime='{ "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                        <div class="bg-white border-radius-8px box-shadow-extra-large p-40px text-center h-100 hover-box">
-                            <div class="d-flex justify-content-center align-items-center mb-15px">
-                                <i class="feather icon-feather-check-circle icon-large me-15px" style="color: #1B93D3;"></i>
-                                <span class="fs-22 fw-700 text-dark-gray ls-minus-1px">Claim Processing</span>
-                            </div>
-                            <p class="m-0 fs-16 text-medium-gray"><span class="fw-600 text-dark-gray">98% Success</span> — Processed without delays</p>
-                        </div>
-                    </div>
-                    
-                    <div class="col" data-anime='{ "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                        <div class="bg-white border-radius-8px box-shadow-extra-large p-40px text-center h-100 hover-box">
-                            <div class="d-flex justify-content-center align-items-center mb-15px">
-                                <i class="feather icon-feather-phone-call icon-large me-15px" style="color: #9BC33A;"></i>
-                                <span class="fs-22 fw-700 text-dark-gray ls-minus-1px">24/7 Call Center</span>
-                            </div>
-                            <p class="m-0 fs-16 text-medium-gray"><span class="fw-600 text-dark-gray">Instant Support</span> — Always here to help</p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="row align-items-center justify-content-center mb-5 opacity-6" data-anime='{ "opacity": [0, 1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
-                    <div class="col-12">
-                        <div class="swiper" data-slider-options='{ "slidesPerView": 2, "spaceBetween": 40, "loop": true, "autoplay": { "delay": 2500, "disableOnInteraction": false }, "breakpoints": { "1200": { "slidesPerView": 6 }, "992": { "slidesPerView": 4 }, "768": { "slidesPerView": 3 } } }'>
-                            <div class="swiper-wrapper align-items-center">
-                                
-                                <div class="swiper-slide text-center">
-                                    <img src="images/logos/capitel.jpeg" alt="Capital Legacy" class="partner-logo-img">
-                                </div>
-                                
-                                <div class="swiper-slide text-center">
-                                    <img src="images/logos/king.jpeg" alt="King Price" class="partner-logo-img">
-                                </div>
-                                
-                                <div class="swiper-slide text-center">
-                                    <img src="images/logos/sant.jpeg" alt="Santam" class="partner-logo-img">
-                                </div>
-                                
-                                <div class="swiper-slide text-center">
-                                    <img src="images/logos/disc.jpeg" alt="Discovery" class="partner-logo-img">
-                                </div>
-                                
-                                <div class="swiper-slide text-center">
-                                    <img src="images/logos/bid.jpeg" alt="Bidvest" class="partner-logo-img">
-                                </div>
-                                
-                                <div class="swiper-slide text-center">
-                                    <img src="images/logos/net.jpeg" alt="Netstar" class="partner-logo-img">
-                                </div>
-                                
-                                <div class="swiper-slide text-center">
-                                    <img src="images/logos/old.jpeg" alt="Old Mutual" class="partner-logo-img">
-                                </div>
-
-                                <div class="swiper-slide text-center">
-                                    <img src="images/logos/sanl.jpeg" alt="Sanlam" class="partner-logo-img">
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-12 text-center" data-anime='{ "translateY": [20, 0], "opacity": [0,1], "duration": 600, "delay": 0, "easing": "easeOutQuad" }'>
-                        <div class="d-inline-block align-middle fw-700 text-white text-uppercase border-radius-30px ps-15px pe-15px fs-12 me-10px lh-26" style="background-color: #F5A623;">Trust</div>
-                        <div class="d-inline-block align-middle text-dark-gray fs-18 fw-600 ls-minus-05px">
-                            Join the <span class="text-decoration-line-bottom text-dark-gray">15,000+ members</span> trusting Bizzer Insurance Brokers.
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section class="bg-very-light-gray pb-0" id="services-tabs">
-            <div class="container">
-                <div class="row mb-8 sm-mb-10">
-                    <div class="col-12 tab-style-08"> 
-                        <div class="tab-content">
-                            
-                            <div class="tab-pane fade in active show" id="tab_funeral">
-                                <div class="row align-items-center justify-content-center g-lg-0">
-                                    <div class="col-md-6 sm-mb-30px position-relative overflow-hidden" data-anime='{ "effect": "slide", "color": "#1B93D3", "direction":"lr", "easing": "easeOutQuad", "delay":50}'>
-                                        <img src="images/bizzer/funeralone.jpeg" alt="Funeral Cover" class="w-100 border-radius-6px" style="height: 505px; object-fit: cover;">
-                                        <div class="bg-very-light-gray w-auto position-absolute pt-20px pb-20px ps-25px pe-25px border-radius-4px bottom-30px left-35px box-shadow-large d-flex align-items-center" data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 800, "staggervalue": 500, "easing": "easeOutQuad" }'>
-                                            <h2 class="vertical-counter d-inline-flex text-dark-gray fw-700 ls-minus-2px md-ls-minus-1px mb-0 text-nowrap border-end border-1 border-color-transparent-dark-very-light pe-20px me-20px" data-to="15"></h2>
-                                            <span class="text-dark-gray ls-minus-05px d-inline-block lh-22 text-nowrap">Thousand ZAR<br/>Lump Sum</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-5 offset-lg-1 col-md-6 text-center text-md-start" data-anime='{ "el": "childs", "translateX": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
-                                        <div class="mb-20px">
-                                            <div class="separator-line-1px w-50px bg-base-color d-inline-block align-middle me-10px opacity-2"></div>
-                                            <span class="d-inline-block text-dark-gray align-middle fw-500 fs-20 ls-minus-05px">Family Security</span>
-                                        </div>
-                                        <h4 class="fw-700 text-dark-gray ls-minus-1px md-mb-20px">Funeral Cover.</h4>
-                                        <p class="mb-35px md-mb-25px">A reliable cash payout benefit plan providing a lump sum for you and your family, covering members up to age 65 so you can grieve without financial stress.</p> 
-                                        <a href="funeral-cover.html" class="btn btn-large btn-rounded with-rounded btn-white btn-box-shadow fw-600">Learn more<span class="bg-base-color text-white"><i class="bi bi-arrow-right-short icon-extra-medium"></i></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="tab-pane fade in" id="tab_tracking">
-                                <div class="row align-items-center justify-content-center g-lg-0">
-                                    <div class="col-md-6 sm-mb-30px position-relative overflow-hidden">
-                                        <img src="images/bizzer/track.jpeg" alt="Advanced Tracking" class="w-100 border-radius-4px" style="height: 505px; object-fit: cover;">
-                                        <div class="bg-very-light-gray w-auto position-absolute pt-20px pb-20px ps-25px pe-25px border-radius-4px bottom-30px left-35px box-shadow-large d-flex align-items-center">
-                                            <h2 class="vertical-counter d-inline-flex text-dark-gray fw-700 ls-minus-2px md-ls-minus-1px mb-0 text-nowrap border-end border-1 border-color-transparent-dark-very-light pe-20px me-20px" data-to="24"></h2>
-                                            <span class="text-dark-gray ls-minus-05px d-inline-block lh-22 text-nowrap">Hours A Day<br/>Monitoring</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-5 offset-lg-1 col-md-6 text-center text-md-start">
-                                        <div class="mb-20px">
-                                            <div class="separator-line-1px w-50px bg-base-color d-inline-block align-middle me-10px opacity-2"></div>
-                                            <span class="d-inline-block text-dark-gray align-middle fw-500 fs-20 ls-minus-05px">Asset Protection</span>
-                                        </div>
-                                        <h4 class="fw-700 text-dark-gray ls-minus-1px md-mb-20px">Advanced Tracking Systems.</h4>
-                                        <p class="mb-35px md-mb-25px">State-of-the-art vehicle tracking technology to ensure your assets are monitored and recoverable at a moment's notice.</p> 
-                                        <a href="tracking.html" class="btn btn-large btn-rounded with-rounded btn-white btn-box-shadow fw-600">Learn more<span class="bg-base-color text-white"><i class="bi bi-arrow-right-short icon-extra-medium"></i></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="tab-pane fade in" id="tab_callcenter">
-                                <div class="row align-items-center justify-content-center g-lg-0">
-                                    <div class="col-md-6 sm-mb-30px position-relative overflow-hidden">
-                                        <img src="images/bizzer/service.jpg" alt="Call Center" class="w-100 border-radius-4px" style="height: 505px; object-fit: cover;">
-                                        <div class="bg-very-light-gray w-auto position-absolute pt-20px pb-20px ps-25px pe-25px border-radius-4px bottom-30px left-35px box-shadow-large d-flex align-items-center">
-                                            <h2 class="vertical-counter d-inline-flex text-dark-gray fw-700 ls-minus-2px md-ls-minus-1px mb-0 text-nowrap border-end border-1 border-color-transparent-dark-very-light pe-20px me-20px" data-to="98"></h2>
-                                            <span class="text-dark-gray ls-minus-05px d-inline-block lh-22 text-nowrap">Percent<br/>Satisfaction</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-5 offset-lg-1 col-md-6 text-center text-md-start">
-                                        <div class="mb-20px">
-                                            <div class="separator-line-1px w-50px bg-base-color d-inline-block align-middle me-10px opacity-2"></div>
-                                            <span class="d-inline-block text-dark-gray align-middle fw-500 fs-20 ls-minus-05px">BPO Services</span>
-                                        </div>
-                                        <h4 class="fw-700 text-dark-gray ls-minus-1px md-mb-20px">Outbound Call Center Setup.</h4>
-                                        <p class="mb-35px md-mb-25px">Elevate your business communication with our professional outbound call center services, designed to increase conversion rates and ensure customer success.</p> 
-                                        <a href="call-center.html" class="btn btn-large btn-rounded with-rounded btn-white btn-box-shadow fw-600">Learn more<span class="bg-base-color text-white"><i class="bi bi-arrow-right-short icon-extra-medium"></i></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="tab-style-08 border-bottom border-color-extra-medium-gray bg-white box-shadow-quadruple-large">
-                <div class="container">
-                    <ul class="nav nav-tabs border-0 fw-500 fs-19 text-center">
-                        <li class="nav-item"><a data-bs-toggle="tab" href="#tab_funeral" class="nav-link active">Funeral Cover<span class="tab-border bg-base-color"></span></a></li>
-                        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tab_tracking" data-tab="counter">Advanced Tracking<span class="tab-border bg-base-color"></span></a></li>
-                        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tab_callcenter" data-tab="counter">Call Center<span class="tab-border bg-base-color"></span></a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="pt-0 mt-5">
-            <div class="container">    
-                <div class="row justify-content-center mb-2">
-                    <div class="col-xxl-5 col-lg-7 col-md-8 text-center" data-anime='{ "translateY": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
-                        <h4 class="text-dark-gray fw-700 ls-minus-1px">Valuable financial and insurance insights</h4>
-                    </div>
-                </div>            
-                <div class="row justify-content-center g-0">
-                    <div class="col-12">
-                        <ul class="blog-classic blog-wrapper grid-loading grid grid-4col xl-grid-4col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-extra-large" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
-                            <li class="grid-sizer"></li>
-                            
-                            <li class="grid-item">
-                                <div class="card bg-transparent border-0 h-100">
-                                    <div class="blog-image position-relative overflow-hidden border-radius-4px">
-                                        <a href="#"><img src="images/bizzer/funeralone.jpeg" alt="Funeral Cover" style="aspect-ratio: 4/3; width: 100%; object-fit: cover;" /></a>
-                                    </div>
-                                    <div class="card-body px-0 pt-30px pb-30px xs-pb-15px last-paragraph-no-margin">
-                                        <a href="#" class="card-title mb-5px fw-600 text-dark-gray d-block lh-sm">The Importance of Funeral Cover</a>
-                                        <p class="mt-2">Why choosing a plan with a cash payout benefit provides ultimate peace of mind for your family.</p> 
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="grid-item">
-                                <div class="card bg-transparent border-0 h-100">
-                                    <div class="blog-image position-relative overflow-hidden border-radius-4px">
-                                        <a href="#"><img src="images/bizzer/service.jpg" alt="Outbound Call Centers" style="aspect-ratio: 4/3; width: 100%; object-fit: cover;" /></a>
-                                    </div>
-                                    <div class="card-body px-0 pt-30px pb-30px xs-pb-15px last-paragraph-no-margin">
-                                        <a href="#" class="card-title mb-5px fw-600 text-dark-gray d-block lh-sm">Scaling with Outbound Call Centers</a>
-                                        <p class="mt-2">How outsourcing your lead generation can drastically improve your bottom line and efficiency.</p> 
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div> 
-                </div>
-            </div>
-        </section>
-        
-        <footer class="footer-dark bg-dark-gray pt-0 pb-2 lg-pb-35px">
-            <div class="footer-top pt-50px pb-50px sm-pt-35px sm-pb-35px border-bottom border-1 border-color-transparent-white-light">
-                <div class="container">
-                    <div class="row align-items-center justify-content-center">
-                        
-                        <div class="col-xl-6 text-center text-xl-start lg-mb-30px sm-mb-20px">
-                            <h3 class="text-white mb-5px fw-500 ls-minus-1px">Need financial peace of mind?</h3>
-                            <span class="fs-20 widget-text fw-300">Let us handle your funeral cover, tracking, and call center needs.</span>
-                        </div>
-                        <div class="col-xl-6 text-center text-xl-end">
-                            <a href="contact.html" class="btn btn-extra-large left-icon btn-box-shadow btn-rounded text-transform-none d-inline-block align-middle me-15px xs-m-10px text-white" style="background-color: #9BC33A;">
-                                <i class="feather icon-feather-mail"></i>Get a Quote
-                            </a>
-                            <a href="tel:0861370164" class="btn btn-extra-large btn-base-color left-icon btn-box-shadow btn-rounded d-inline-block align-middle xs-m-10px">
-                                <i class="feather icon-feather-phone-call"></i>0861 370 164
-                            </a>
-                        </div>
-                        </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row justify-content-center fs-17 fw-300 mt-5 mb-4 md-mt-45px md-mb-45px xs-mt-35px xs-mb-35px">
-                    
-                    <div class="col-6 col-lg-3 order-sm-1 md-mb-40px xs-mb-30px last-paragraph-no-margin">
-                        <a href="index.html" class="footer-logo mb-15px d-inline-block">
-                            <img src="images/bizzer/logo.png" data-at2x="images/bizzer/logo.png" alt="Bizzer Insurance Brokers">
-                        </a>
-                        <p class="w-85 xl-w-95 sm-w-100">Registered FSP licensed insurance brokerage (License No: 52784). Dedicated to trust and credibility.</p>
-                        <div class="elements-social social-icon-style-02 mt-20px lg-mt-20px">
-                            <ul class="small-icon light">
-                                <li><a class="facebook" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                <li><a class="twitter" href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a></li> 
-                                <li><a class="instagram" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li> 
-                                <li><a class="linkedin" href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-2 col-sm-4 xs-mb-30px order-sm-3 order-lg-2">
-                        <span class="fs-18 fw-400 d-block text-white mb-5px">Quick Links</span>
+                    <div class="col-lg-2 col-6 offset-xl-1 text-center text-lg-start">
+                        <span class="alt-font fs-14 fw-600 text-uppercase text-white ls-1px d-block mb-5px">Useful links</span>
                         <ul>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="services.html">Our Services</a></li>
-                            <li><a href="register.html">Register</a></li>
-                            <li><a href="claim.html">Submit a Claim</a></li>
+                            <li><a href="https://craftohtml.themezaa.com/documentation/" target="_blank">Documentation</a></li>
+                            <li><a href="https://www.themezaa.com/support/" target="_blank">Support center</a></li>
+                            <li><a href="https://www.youtube.com/channel/UCxIgqIkSGVVqEsm-HE-tadQ/" target="_blank">Video tutorials</a></li>
+                            <li><a href="https://themeforest.net/user/themezaa/portfolio" target="_blank">Envato portfolio</a></li>
+                            <li><a href="https://www.themezaa.com/theme-customization/" target="_blank">Customization</a></li>
                         </ul>
                     </div>
-                    <div class="col-6 col-lg-2 col-sm-4 xs-mb-30px order-sm-4 order-lg-3">
-                        <span class="fs-18 fw-400 d-block text-white mb-5px">Products</span>
+                    <div class="col-lg-2 col-6 text-center text-lg-start">
+                        <span class="alt-font fs-14 fw-600 text-uppercase text-white ls-1px d-block mb-5px">Follow Us</span>
                         <ul>
-                            <li><a href="funeral-cover.html">Funeral Cover</a></li>
-                            <li><a href="tracking.html">Advanced Tracking</a></li>
-                            <li><a href="call-center.html">Call Center Solutions</a></li>
+                            <li><a href="https://www.facebook.com/themezaastudio/" target="_blank">Facebook</a></li>
+                            <li><a href="https://www.twitter.com/themezaa" target="_blank">Twitter</a></li>
+                            <li><a href="https://www.dribbble.com/linksture" target="_blank">Dribbble</a></li> 
+                            <li><a href="https://www.youtube.com/channel/UCxIgqIkSGVVqEsm-HE-tadQ/" target="_blank">Youtube</a></li>
+                            <li><a href="https://www.linkedin.com/company/themezaa/" target="_blank">Linkedin</a></li>
                         </ul>
                     </div>
-                    <div class="col-6 col-lg-2 col-sm-4 xs-mb-30px order-sm-5 order-lg-4">
-                        <span class="fs-18 fw-400 d-block text-white mb-5px">Contact Us</span>
-                        <p class="mb-5px">General Enquiries:</p>
-                        <a href="mailto:info@bizzerinsurance.co.za" class="text-white lh-16 d-block mb-15px">info@bizzerinsurance.co.za</a>
-                        <p class="mb-5px">24/7 Call Center:</p>
-                        <a href="tel:0861370164" class="text-white lh-16 d-block mb-15px">0861 370 164</a>
-                        <p class="mb-5px">Working Hours:</p>
-                        <span class="text-white lh-16 d-block">Mon - Fri: 09:00 - 17:00</span>
+                    <div class="col-lg-2 order-first order-lg-4 text-center text-lg-start md-mb-20px">
+                        <a href="index.html" class="footer-logo"><img src="images/logo-white-demo.png" data-at2x="images/logo-white-demo@2x.png" alt=""></a>
                     </div>
-                    <div class="col-lg-3 col-sm-6 md-mb-40px xs-mb-0 order-sm-2 order-lg-5">
-                        <span class="fs-18 fw-400 d-block text-white mb-5px">Subscribe to newsletter</span>
-                        <p class="mb-20px">Stay updated with our latest plans and offers!</p>
-                        <div class="d-inline-block w-100 newsletter-style-02 position-relative"> 
-                            <form action="#" method="post" class="position-relative"> 
-                                <input class="border-color-transparent-white-light bg-transparent border-radius-4px w-100 form-control lg-ps-15px required" type="email" name="email" placeholder="Enter your email" />
-                                <button class="btn pe-20px submit" aria-label="submit" type="button"><i class="bi bi-envelope icon-small text-white"></i></button>
-                            </form>
-                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-7 last-paragraph-no-margin text-center text-lg-start">
+                        <p class="fs-13 lh-22 w-90 md-w-100">ThemeZaa - The best WordPress, Shopify and Magento themes and plugins provider. We design and develop quality themes and plugins to create your awesome website.</p>
                     </div>
-                    </div> 
-                
-                <div class="row align-items-center fs-16 fw-300">
-                    <div class="col-md-4 last-paragraph-no-margin order-2 order-md-1 text-center text-md-start">
-                        <p>&COPY; Copyright 2026 <a href="index.html" class="text-decoration-line-bottom text-white">Bizzer Insurance Brokers</a></p>
+                    <div class="col-lg-5 text-center text-lg-end md-mt-15px last-paragraph-no-margin">
+                        <p class="fs-13 lh-22">&copy; 2025 Crafto is Powered by <a href="https://www.themezaa.com/" target="_blank" class="text-decoration-line-bottom text-white">ThemeZaa</a></p>
                     </div>
-                    <div class="col-md-8 text-md-end order-1 order-md-2 text-center text-md-end sm-mb-10px">
-                        <ul class="footer-navbar sm-lh-normal"> 
-                            <li><a href="#" class="nav-link">POPIA Policy</a></li>
-                            <li><a href="#" class="nav-link">PAIA Manual</a></li>
-                            <li><a href="#" class="nav-link">Privacy Notice</a></li>
-                            <li><a href="#" class="nav-link">Terms and Conditions</a></li>
-                        </ul>
-                    </div>
-                    </div>
-            </div> 
+                </div>
+            </div>
         </footer>
-        
-        <div class="sticky-wrap d-none d-lg-inline-block" data-animation-delay="100" data-shadow-animation="true">
-            <span class="fs-16">
-                <i class="bi bi-envelope icon-small me-10px"></i>Need financial advice? — 
-                <a href="mailto:info@bizzerinsurance.co.za" class="text-decoration-line-bottom fw-500">Send a message</a>
-            </span>
-        </div>
-        <div class="scroll-progress d-none d-xxl-block">
-            <a href="#" class="scroll-top" aria-label="scroll">
-                <span class="scroll-text">Scroll</span>
-                <span class="scroll-line"><span class="scroll-point"></span></span>
-            </a>
-        </div>
-        
+        <!-- end footer -->
+        <!-- javascript libraries -->
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/vendors.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
-        <script>
-            window.addEventListener('load', function() {
-                const preloader = document.querySelector('.bizzer-preloader');
-                if(preloader) {
-                    setTimeout(() => {
-                        preloader.classList.add('loaded');
-                    }, 400); 
-                }
-            });
-        </script>
     </body>
 </html>
